@@ -20,7 +20,7 @@ export const ProjectCard = ({ project, forceRegularLayout = false }: { project: 
       className={`group flex flex-col ${isFeatured ? 'lg:flex-row' : ''} bg-white/[0.02] border border-white/10 rounded-md overflow-hidden transition-colors hover:bg-white/[0.04] h-full`}
     >
       {/* Image Section */}
-      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-background/50 border-white/10 ${isFeatured ? 'lg:w-[55%] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
+      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-background/50 border-white/10 ${isFeatured ? 'w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:w-[55%] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
         <div className="absolute inset-0 bg-background mix-blend-color z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
         <Image 
           src={project.image} 
