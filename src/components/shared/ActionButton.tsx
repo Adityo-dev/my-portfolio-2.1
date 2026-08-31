@@ -5,12 +5,15 @@ import React from 'react';
 
 interface ActionButtonProps {
   label: string | React.ReactNode;
-  href: string;
+  href?: string;
   className?: string;
   target?: string;
   variant?: 'default' | 'outline' | 'primary';
   showIcon?: boolean;
   icon?: React.ReactNode;
+  asButton?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
 export const ActionButton = ({ 
@@ -20,7 +23,10 @@ export const ActionButton = ({
   target,
   variant = 'default',
   showIcon = true,
-  icon
+  icon,
+  asButton = false,
+  type = 'button',
+  disabled = false
 }: ActionButtonProps) => {
 
   const getButtonStyles = () => {
@@ -47,10 +53,40 @@ export const ActionButton = ({
     }
   };
 
+  if (asButton) {
+    return (
+      <button 
+        type={type} 
+        disabled={disabled}
+        className={cn("flex items-stretch gap-3 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed", className)}
+      >
+        <div
+          className={cn(
+            "px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-sm flex items-center justify-center",
+            getButtonStyles()
+          )}
+        >
+          {label}
+        </div>
+        
+        {showIcon && (
+          <div
+            className={cn(
+              "p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm",
+              getIconBoxStyles()
+            )}
+          >
+            {icon ? icon : <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={1.5} />}
+          </div>
+        )}
+      </button>
+    );
+  }
+
   return (
     <div className={cn("flex items-center gap-3 group", className)}>
       <Link 
-        href={href}
+        href={href || "#"}
         target={target}
         className={cn(
           "px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-sm flex items-center justify-center",
@@ -62,7 +98,7 @@ export const ActionButton = ({
       
       {showIcon && (
         <Link 
-          href={href}
+          href={href || "#"}
           target={target}
           className={cn(
             "p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm",
