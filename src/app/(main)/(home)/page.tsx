@@ -1,7 +1,7 @@
 import { HeroSection } from "./_components/HeroSection/HeroSection";
 import { StatsSection } from "./_components/StatsSection/StatsSection";
 import { AboutSection } from "./_components/AboutSection/AboutSection";
-import { ServicesSection } from "./_components/ServicesSection/ServicesSection";
+import { ServicesSection } from "../services/_components/ServicesSection/ServicesSection";
 import { ProjectsSection } from "./_components/ProjectsSection/ProjectsSection";
 import { TechStackSection } from "./_components/TechStackSection/TechStackSection";
 import { CapabilitiesSection } from "../about/_components/CapabilitiesSection/CapabilitiesSection";

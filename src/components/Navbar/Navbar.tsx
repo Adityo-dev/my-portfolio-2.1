@@ -41,7 +41,7 @@ export const Navbar = () => {
         <div className="w-1/4">
           <Link
             href="/"
-            className="text-[11px] font-mono tracking-widest text-foreground uppercase hover:opacity-70 transition-opacity"
+            className="text-[11px] font-mono tracking-widest text-foreground no-wrap uppercase hover:opacity-70 transition-opacity"
           >
             Koushik Barmon
           </Link>
