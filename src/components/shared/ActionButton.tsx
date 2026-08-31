@@ -58,11 +58,11 @@ export const ActionButton = ({
       <button 
         type={type} 
         disabled={disabled}
-        className={cn("flex items-stretch gap-3 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed", className)}
+        className={cn("flex items-stretch gap-2 sm:gap-3 group cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed shrink-0", className)}
       >
         <div
           className={cn(
-            "px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-sm flex items-center justify-center",
+            "px-4 sm:px-6 py-3 sm:py-3.5 text-[11px] sm:text-xs font-bold tracking-widest uppercase whitespace-nowrap transition-all duration-300 rounded-sm flex items-center justify-center",
             getButtonStyles()
           )}
         >
@@ -72,7 +72,7 @@ export const ActionButton = ({
         {showIcon && (
           <div
             className={cn(
-              "p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm",
+              "p-3 sm:p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm shrink-0",
               getIconBoxStyles()
             )}
           >
@@ -84,12 +84,12 @@ export const ActionButton = ({
   }
 
   return (
-    <div className={cn("flex items-center gap-3 group", className)}>
+    <div className={cn("flex items-center gap-2 sm:gap-3 group shrink-0", className)}>
       <Link 
         href={href || "#"}
         target={target}
         className={cn(
-          "px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-sm flex items-center justify-center",
+          "px-4 sm:px-6 py-3 sm:py-3.5 text-[11px] sm:text-xs font-bold tracking-widest uppercase whitespace-nowrap transition-all duration-300 rounded-sm flex items-center justify-center",
           getButtonStyles()
         )}
       >
@@ -101,7 +101,7 @@ export const ActionButton = ({
           href={href || "#"}
           target={target}
           className={cn(
-            "p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm",
+            "p-3 sm:p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm shrink-0",
             getIconBoxStyles()
           )}
         >

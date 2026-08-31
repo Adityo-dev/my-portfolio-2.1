@@ -1,55 +1,62 @@
 "use client";
+
 import { motion } from "framer-motion";
 
 const STATS = [
   {
     value: "30+",
-    title: "Projects built",
+    title: "Projects Built",
     description: "Personal, freelance and client work",
   },
   {
-    value: "3+",
-    title: "Years building",
-    description: "Learning and shipping since 2023",
+    value: "100%",
+    title: "Code Ownership",
+    description: "Full transfer of code & accounts",
   },
   {
-    value: "12",
-    title: "Core technologies",
+    value: "12+",
+    title: "Core Technologies",
     description: "Used in production projects",
   },
   {
     value: "22+",
-    title: "Delivered to clients",
+    title: "Delivered to Clients",
     description: "Live and in use today",
   },
 ];
 
 export const StatsSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-12 md:py-16 overflow-hidden">
+    <section className="relative w-full bg-background border-t border-white/5 py-16 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 lg:gap-8">
-          {STATS.map((stat, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="flex flex-col items-center text-center gap-1.5"
-            >
-              <div className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground">
-                {stat.value}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6 }}
+          className="rounded-md border border-white/10 bg-white/10 overflow-hidden"
+        >
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-[1px]">
+            {STATS.map((stat, idx) => (
+              <div
+                key={idx}
+                className="bg-background hover:bg-white/[0.02] transition-colors p-6 sm:p-8 flex flex-col justify-between"
+              >
+                <div className="text-3xl sm:text-4xl lg:text-5xl font-bold font-mono tracking-tight text-foreground mb-3">
+                  {stat.value}
+                </div>
+                <div>
+                  <div className="text-sm font-semibold tracking-wide text-foreground mb-1">
+                    {stat.title}
+                  </div>
+                  <div className="text-xs text-muted-foreground leading-relaxed">
+                    {stat.description}
+                  </div>
+                </div>
               </div>
-              <div className="text-sm font-medium tracking-wide text-foreground mt-1">
-                {stat.title}
-              </div>
-              <div className="text-[11px] text-muted-foreground leading-relaxed">
-                {stat.description}
-              </div>
-            </motion.div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
