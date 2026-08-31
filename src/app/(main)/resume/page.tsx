@@ -1,5 +1,6 @@
 import { PageHero } from "@/components/shared/PageHero";
 import { Download } from "lucide-react";
+import { ResumeDocument } from "./_components/ResumeDocument";
 
 export default function ResumePage() {
   return (
@@ -19,7 +20,7 @@ export default function ResumePage() {
           showIcon: false
         }}
       />
-      {/* Content will go here */}
+      <ResumeDocument />
     </div>
   );
 }
