@@ -44,17 +44,18 @@ const SERVICES = [
 
 export const ServicesSection = () => {
   return (
-    <section className="relative w-full bg-background py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10">
+    <section className="relative w-full bg-background py-24 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
-        <div className="max-w-3xl mb-16 lg:mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
+          <div className="max-w-3xl">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-6"
+            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
           >
             SERVICES
           </motion.div>
@@ -63,7 +64,7 @@ export const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
           >
             How I can help
           </motion.h2>
@@ -76,6 +77,7 @@ export const ServicesSection = () => {
           >
             Six kinds of work I take on — scoped, built and deployed end to end.
           </motion.p>
+          </div>
         </div>
 
         {/* 3x2 Grid Container */}
@@ -84,14 +86,14 @@ export const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="rounded-2xl border border-white/10 bg-white/10 overflow-hidden"
+          className="rounded-md border border-white/10 bg-white/10 overflow-hidden"
         >
           {/* Internal Grid with 1px gap for perfect borders */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px]">
             {SERVICES.map((service, idx) => (
               <div 
                 key={idx} 
-                className="bg-background hover:bg-white/[0.02] transition-colors duration-500 p-8 lg:p-10 flex flex-col h-full"
+                className="bg-background hover:bg-white/[0.02] transition-colors duration-500 p-6 flex flex-col h-full"
               >
                 <div className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36] mb-5">
                   {service.num}

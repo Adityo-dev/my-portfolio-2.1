@@ -28,8 +28,8 @@ const STATS = [
 
 export const StatsSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-12 lg:py-16 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10">
+    <section className="relative w-full bg-background border-t border-white/5 py-12 md:py-16 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 lg:gap-8">
           {STATS.map((stat, idx) => (
             <motion.div

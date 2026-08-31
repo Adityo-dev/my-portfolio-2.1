@@ -32,17 +32,18 @@ const CAPABILITIES = [
 
 export const CapabilitiesSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10 flex flex-col">
+    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
-        <div className="w-full max-w-4xl mb-16 lg:mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
+          <div className="max-w-3xl">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-6"
+            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
           >
             CAPABILITIES
           </motion.div>
@@ -51,14 +52,15 @@ export const CapabilitiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1]"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
           >
             Not just the tools — what I can do with them.
           </motion.h2>
+          </div>
         </div>
 
         {/* 3x2 Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 lg:gap-x-16 gap-y-12 lg:gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {CAPABILITIES.map((item, idx) => (
             <motion.div 
               key={idx}

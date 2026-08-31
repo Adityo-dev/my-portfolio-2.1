@@ -2,43 +2,50 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { LayoutTemplate, Paintbrush, Server, Database, Wrench } from "lucide-react";
 
 const STACK = [
   {
     category: "Frontend",
+    icon: LayoutTemplate,
     items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
     category: "UI",
+    icon: Paintbrush,
     items: ["shadcn/ui", "Framer Motion", "Headless UI"],
   },
   {
     category: "Backend",
+    icon: Server,
     items: ["Node.js", "Express", "REST API", "Authentication"],
   },
   {
     category: "Database",
+    icon: Database,
     items: ["PostgreSQL", "MongoDB"],
   },
   {
     category: "Tools",
-    items: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "pnpm"],
+    icon: Wrench,
+    items: ["Git", "GitHub", "VS Code", "Figma", "Vercel", "npm", "pnpm"],
   },
 ];
 
 export const TechStackSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10 flex flex-col">
+    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
-        <div className="w-full mb-16 lg:mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
+          <div className="max-w-3xl">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-6"
+            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
           >
             TECH STACK
           </motion.div>
@@ -47,7 +54,7 @@ export const TechStackSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-6"
+            className="text-3xl sm:text-4xl  lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
           >
             What I build with
           </motion.h2>
@@ -60,6 +67,7 @@ export const TechStackSection = () => {
           >
             Grouped by where it sits in the stack, and limited to what I have actually shipped with.
           </motion.p>
+          </div>
         </div>
 
         {/* Stack List */}
@@ -71,10 +79,11 @@ export const TechStackSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: 0.1 * idx }}
-              className="grid grid-cols-1 md:grid-cols-4 gap-4 py-8 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-xl"
+              className="grid grid-cols-1 md:grid-cols-4 gap-4 py-8 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-md"
             >
               <div className="md:col-span-1">
-                <h3 className="text-[15px] font-semibold text-foreground">
+                <h3 className="text-[15px] font-semibold text-foreground flex items-center gap-2.5">
+                  <group.icon className="w-4 h-4 text-[#FF5A36]" />
                   {group.category}
                 </h3>
               </div>

@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { ActionButton } from "@/components/shared/ActionButton";
 
 const FEATURES = [
   {
@@ -26,41 +26,40 @@ const FEATURES = [
 
 export const AboutSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10">
+    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
-        {/* Section Label */}
-        <motion.div 
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5 }}
-          className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-6"
-        >
-          ABOUT
-        </motion.div>
-
-        {/* Heading Area */}
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-foreground max-w-4xl leading-[1.1] mb-10"
-        >
-          A developer who cares about both code and the product.
-        </motion.h2>
-
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-20">
-          <motion.p 
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-3xl"
-          >
-            I am a full stack developer working with React, Next.js, TypeScript, Node.js and SQL or NoSQL databases. I build complete applications — authentication, role-based access, dashboards, commerce flows and the APIs behind them — and I care most about the part after it works: whether it stays understandable and fast as it grows.
-          </motion.p>
+        {/* Header Area */}
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
+          <div className="max-w-3xl">
+            <motion.div 
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.5 }}
+              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            >
+              ABOUT
+            </motion.div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            >
+              A developer who cares about both code and the product.
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            >
+              I am a full stack developer working with React, Next.js, TypeScript, Node.js and SQL or NoSQL databases. I build complete applications — authentication, role-based access, dashboards, commerce flows and the APIs behind them — and I care most about the part after it works: whether it stays understandable and fast as it grows.
+            </motion.p>
+          </div>
 
           <motion.div
             initial={{ opacity: 0, y: 10 }}
@@ -69,15 +68,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="shrink-0"
           >
-            <Button 
-              asChild 
-              variant="outline" 
-              className="rounded-full h-12 px-6 bg-white/5 border-white/10 hover:bg-white/10 text-foreground transition-all duration-300 gap-2"
-            >
-              <Link href="/about">
-                More about me <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
+            <ActionButton href="/about" label="More about me" />
           </motion.div>
         </div>
 
@@ -87,12 +78,12 @@ export const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-3 rounded-2xl border border-white/10 bg-white/[0.02] overflow-hidden"
+          className="grid grid-cols-1 md:grid-cols-3 rounded-md border border-white/10 bg-white/[0.02] overflow-hidden"
         >
           {FEATURES.map((feature, idx) => (
             <div 
               key={idx} 
-              className={`p-8 lg:p-10 flex flex-col gap-5 ${
+              className={`p-6 flex flex-col gap-5 ${
                 idx !== FEATURES.length - 1 ? "border-b md:border-b-0 md:border-r border-white/10" : ""
               }`}
             >

@@ -34,17 +34,18 @@ const CASE_STUDIES = [
 
 export const CaseStudiesSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 lg:py-32 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10 flex flex-col">
+    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
-        <div className="w-full max-w-4xl mb-16 lg:mb-20">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
+          <div className="max-w-3xl">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-6"
+            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
           >
             CASE STUDIES
           </motion.div>
@@ -53,7 +54,7 @@ export const CaseStudiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-6"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
           >
             Problem, solution, result
           </motion.h2>
@@ -66,6 +67,7 @@ export const CaseStudiesSection = () => {
           >
             Three projects broken down the way a client or reviewer would want to read them.
           </motion.p>
+          </div>
         </div>
 
         {/* Case Studies List */}
@@ -77,7 +79,7 @@ export const CaseStudiesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.1 * idx }}
-              className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-xl"
+              className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-md"
             >
               {/* Column 1: Project Info */}
               <div className="md:col-span-1 flex flex-col">

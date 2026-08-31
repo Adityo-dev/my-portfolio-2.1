@@ -135,10 +135,10 @@ export const ProjectsSection = () => {
 
   return (
     <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
-      <div className="container mx-auto max-w-[1400px] px-4 relative z-10">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
-        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12 ">
+        <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-10 mb-12">
           <div className="max-w-3xl">
             <motion.div 
               initial={{ opacity: 0, y: 10 }}
