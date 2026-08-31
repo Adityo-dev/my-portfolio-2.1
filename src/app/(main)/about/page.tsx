@@ -1,4 +1,9 @@
 import { PageHero } from "@/components/shared/PageHero";
+import { ImageSection } from "./_components/ImageSection/ImageSection";
+import { AboutDetails } from "./_components/AboutDetails/AboutDetails";
+import { CapabilitiesSection } from "./_components/CapabilitiesSection/CapabilitiesSection";
+import { ExperienceSection } from "./_components/ExperienceSection/ExperienceSection";
+import { EducationSection } from "./_components/EducationSection/EducationSection";
 import { Download } from "lucide-react";
 
 export default function AboutPage() {
@@ -19,7 +24,11 @@ export default function AboutPage() {
           showIcon: false
         }}
       />
-      {/* Content will go here */}
+      <ImageSection />
+      <AboutDetails />
+      <ExperienceSection />
+      <EducationSection />
+      <CapabilitiesSection />
     </div>
   );
 }
