@@ -7,7 +7,7 @@ import { ProjectCard } from "../../../projects/_components/ProjectCard";
 
 export const ProjectsSection = () => {
   const featuredProject = PROJECTS.find(p => p.featured)!;
-  const regularProjects = PROJECTS.filter(p => !p.featured);
+  const regularProjects = PROJECTS.filter(p => !p.featured).slice(0, 3);
 
   return (
     <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
