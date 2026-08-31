@@ -23,39 +23,43 @@ export const Footer = () => {
           
           {/* Navigation */}
           <div className="flex flex-col gap-4">
-            <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-2">
-              NAVIGATION
+            <div className="text-sm text-muted-foreground/80 mb-2 font-medium tracking-wide">
+              Pages
             </div>
-            <Link href="/" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Home
+            <Link href="/projects" className="text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Projects
             </Link>
-            <Link href="/projects" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Selected Work
+            <Link href="/about" className="text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              About
             </Link>
-            <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              About Me
+            <Link href="/services" className="text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Services
             </Link>
-            <Link href="/resume" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Resume
+            <Link href="/contact" className="text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              Contact
             </Link>
           </div>
           
           {/* Connect */}
           <div className="flex flex-col gap-4">
-            <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-2">
-              CONNECT
+            <div className="text-sm text-muted-foreground/80 mb-2 font-medium tracking-wide">
+              Elsewhere
             </div>
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              GitHub <ArrowUpRight className="h-3 w-3 opacity-0 -translate-x-1 translate-y-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
+            <a href="https://github.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1.5 text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <span>GitHub</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground/70 group-hover:text-foreground transition-colors" />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              LinkedIn <ArrowUpRight className="h-3 w-3 opacity-0 -translate-x-1 translate-y-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1.5 text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <span>LinkedIn</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground/70 group-hover:text-foreground transition-colors" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              Twitter <ArrowUpRight className="h-3 w-3 opacity-0 -translate-x-1 translate-y-1 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0 transition-all duration-300" />
+            <a href="https://fiverr.com" target="_blank" rel="noreferrer" className="group flex items-center gap-1.5 text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <span>Fiverr</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground/70 group-hover:text-foreground transition-colors" />
             </a>
-            <a href="mailto:hello@example.com" className="group flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
-              hello@example.com
+            <a href="mailto:hello@example.com" className="group flex items-center gap-1.5 text-[15px] font-medium text-muted-foreground hover:text-foreground transition-colors">
+              <span>Email</span>
+              <ArrowUpRight className="h-3.5 w-3.5 text-muted-foreground/70 group-hover:text-foreground transition-colors" />
             </a>
           </div>
 
