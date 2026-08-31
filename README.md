@@ -1,4 +1,4 @@
-# Aditto Dev - Full Stack Developer Portfolio
+# Koushik Barmon - Full Stack Developer Portfolio
 
 A premium, minimal, and editorial-style developer portfolio built with Next.js, Tailwind CSS, and Framer Motion. The design focuses on a dark luxury aesthetic, strong typography, and a "Developer as a Digital Product Builder" narrative.
 

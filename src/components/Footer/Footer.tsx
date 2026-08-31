@@ -14,7 +14,7 @@ export const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2 flex flex-col gap-5">
             <Link href="/" className="text-2xl font-bold tracking-tight text-foreground">
-              Aditto Dev.
+              Koushik Barmon.
             </Link>
             <p className="text-[15px] text-muted-foreground leading-relaxed max-w-sm">
               Full-stack developer focused on building digital products with solid architecture and refined interfaces.
@@ -66,7 +66,7 @@ export const Footer = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-between items-center pt-8 border-t border-white/10 text-[13px] font-medium text-muted-foreground/60 gap-4">
-          <p>© {new Date().getFullYear()} Aditto Dev. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Koushik Barmon. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <span className="hover:text-foreground transition-colors cursor-pointer">Privacy</span>
             <span className="hover:text-foreground transition-colors cursor-pointer">Terms</span>

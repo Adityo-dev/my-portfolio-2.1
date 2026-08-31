@@ -43,7 +43,7 @@ export const Navbar = () => {
             href="/"
             className="text-[11px] font-mono tracking-widest text-foreground uppercase hover:opacity-70 transition-opacity"
           >
-            Aditto Dev
+            Koushik Barmon
           </Link>
         </div>
 

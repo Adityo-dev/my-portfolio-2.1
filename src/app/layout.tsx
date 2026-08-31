@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aditto Dev - Full Stack Developer",
+  title: "Koushik Barmon - Full Stack Developer",
   description: "Full Stack Developer building modern, scalable and high-performance web applications.",
   icons: {
     icon: "/favicon.svg",
