@@ -1,11 +1,9 @@
 "use client";
-
-import React from "react";
 import { motion } from "framer-motion";
 
 const STATS = [
   {
-    value: "10+",
+    value: "30+",
     title: "Projects built",
     description: "Personal, freelance and client work",
   },
@@ -20,7 +18,7 @@ const STATS = [
     description: "Used in production projects",
   },
   {
-    value: "6",
+    value: "22+",
     title: "Delivered to clients",
     description: "Live and in use today",
   },

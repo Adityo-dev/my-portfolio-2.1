@@ -8,25 +8,70 @@ interface ActionButtonProps {
   href: string;
   className?: string;
   target?: string;
+  variant?: 'default' | 'outline' | 'primary';
+  showIcon?: boolean;
+  icon?: React.ReactNode;
 }
 
-export const ActionButton = ({ label, href, className, target }: ActionButtonProps) => {
+export const ActionButton = ({ 
+  label, 
+  href, 
+  className, 
+  target,
+  variant = 'default',
+  showIcon = true,
+  icon
+}: ActionButtonProps) => {
+
+  const getButtonStyles = () => {
+    switch (variant) {
+      case 'outline':
+        return "border border-white/20 bg-transparent text-foreground hover:bg-white/5";
+      case 'primary':
+        return "border border-[#FF5A36] bg-[#FF5A36] text-white hover:bg-[#FF5A36]/90 hover:border-[#FF5A36]/90";
+      case 'default':
+      default:
+        return "border border-foreground bg-foreground text-background hover:opacity-90";
+    }
+  };
+
+  const getIconBoxStyles = () => {
+    switch (variant) {
+      case 'outline':
+        return "border border-white/20 bg-transparent text-foreground hover:bg-white/5";
+      case 'primary':
+        return "border border-[#FF5A36] bg-[#FF5A36] text-white hover:bg-[#FF5A36]/90 hover:border-[#FF5A36]/90";
+      case 'default':
+      default:
+        return "border border-white/10 bg-white/[0.02] text-foreground hover:bg-white/10";
+    }
+  };
+
   return (
-    <div className={cn("flex items-center gap-3", className)}>
+    <div className={cn("flex items-center gap-3 group", className)}>
       <Link 
         href={href}
         target={target}
-        className="bg-foreground text-background px-6 py-3.5 text-xs font-bold tracking-widest uppercase hover:opacity-90 transition-opacity rounded-sm"
+        className={cn(
+          "px-6 py-3.5 text-xs font-bold tracking-widest uppercase transition-all duration-300 rounded-sm flex items-center justify-center",
+          getButtonStyles()
+        )}
       >
         {label}
       </Link>
-      <Link 
-        href={href}
-        target={target}
-        className="border border-white/10 bg-white/[0.02] text-foreground p-3.5  hover:bg-white/10 transition-colors flex items-center justify-center rounded-sm"
-      >
-        <ArrowUpRight className="h-4 w-4 md:h-5 md:w-5" strokeWidth={1.5} />
-      </Link>
+      
+      {showIcon && (
+        <Link 
+          href={href}
+          target={target}
+          className={cn(
+            "p-3.5 transition-all duration-300 flex items-center justify-center rounded-sm",
+            getIconBoxStyles()
+          )}
+        >
+          {icon ? icon : <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" strokeWidth={1.5} />}
+        </Link>
+      )}
     </div>
   )
 }

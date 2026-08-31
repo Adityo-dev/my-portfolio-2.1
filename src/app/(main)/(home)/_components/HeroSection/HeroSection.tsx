@@ -8,7 +8,7 @@ export const HeroSection = () => {
   return (
     <section aria-label="Introduction" className="relative min-h-screen w-full bg-background flex flex-col justify-center pt-32 pb-12 overflow-hidden selection:bg-foreground selection:text-background">
       
-      <div className="container mx-auto max-w-[1400px] px-6 md:px-12 relative z-10 flex flex-col justify-center h-full grow">
+      <div className="mx-auto max-w-[1400px] px-4 relative z-10 flex flex-col justify-center h-full grow">
         
         {/* Top Tags (Using previous metadata text & colors) */}
         <motion.div 

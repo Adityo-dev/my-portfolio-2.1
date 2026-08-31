@@ -87,7 +87,7 @@ export const InsightsSection = () => {
               <Link 
                 key={idx} 
                 href={insight.slug}
-                className="group bg-background hover:bg-white/[0.02] transition-colors duration-500 p-6 flex flex-col h-full"
+                className="group bg-background hover:bg-white/[0.04] transition-colors duration-500 p-6 flex flex-col h-full"
               >
                 <div className="flex items-center gap-2 text-[10px] font-mono tracking-widest mb-6">
                   <span className="text-[#FF5A36] font-semibold uppercase">{insight.category}</span>
@@ -95,7 +95,7 @@ export const InsightsSection = () => {
                   <span className="text-muted-foreground">{insight.readTime}</span>
                 </div>
                 
-                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-4 group-hover:text-[#FF5A36] transition-colors duration-300">
+                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-4 transition-colors duration-300">
                   {insight.title}
                 </h3>
                 

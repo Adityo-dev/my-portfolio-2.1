@@ -36,7 +36,7 @@ export const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md border-b border-white/5 py-3" : "bg-transparent py-6"
       }`}
     >
-      <div className="mx-auto max-w-[1400px] px-6 md:px-12 flex items-center justify-between">
+      <div className="mx-auto max-w-[1400px] px-4 flex items-center justify-between">
         {/* Left: Wordmark */}
         <div className="w-1/4">
           <Link
@@ -111,7 +111,7 @@ export const Navbar = () => {
           open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="px-6 py-8 flex flex-col gap-6">
+        <div className="px-4 py-8 flex flex-col gap-6">
           <ul className="flex flex-col space-y-4">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
