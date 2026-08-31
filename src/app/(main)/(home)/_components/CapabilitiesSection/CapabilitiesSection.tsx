@@ -68,7 +68,7 @@ export const CapabilitiesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: 0.1 * idx }}
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-3 border-l border-white/10 pl-5 py-1"
             >
               <h3 className="text-[17px] font-semibold text-foreground">
                 {item.title}

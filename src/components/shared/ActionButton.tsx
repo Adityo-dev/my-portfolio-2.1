@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface ActionButtonProps {
-  label: string;
+  label: string | React.ReactNode;
   href: string;
   className?: string;
   target?: string;
