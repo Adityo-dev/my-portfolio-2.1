@@ -38,7 +38,7 @@ export const StatsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="flex flex-col gap-1.5"
+              className="flex flex-col items-center text-center gap-1.5"
             >
               <div className="text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-foreground">
                 {stat.value}
