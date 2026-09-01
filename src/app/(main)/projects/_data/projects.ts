@@ -142,12 +142,13 @@ export const PROJECTS = [
       liveDemo: "https://xstore-flax.vercel.app", 
       github: "" 
     },
-    image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1280&auto=format&fit=crop",
+    image: "/projects/xstore/xstore-full-storefront.png",
     images: [
-      "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=1280&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200",
-      "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1200",
-      "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=1200"
+      "/projects/xstore/xstore-full-storefront.png",
+      "/projects/xstore/xstore-product-catalog.png",
+      "/projects/xstore/xstore-product-details.png",
+      "/projects/xstore/xstore-cart-drawer.png",
+      "/projects/xstore/xstore-checkout-flow.png"
     ],
     overview: "XStore is a contemporary, conversion-focused e-commerce storefront engineered to deliver a seamless retail shopping experience. Built using modern frontend frameworks and responsive UI design, it features dynamic product catalogs, multi-attribute filtering, persistent sliding drawer cart management, and instant search capabilities with high performance across all mobile and desktop devices.",
     problem: "Traditional e-commerce platforms often struggle with sluggish page reloads during product filtering, state desynchronization between tabs when updating shopping carts, and heavy bundle sizes that degrade mobile conversion rates.",
