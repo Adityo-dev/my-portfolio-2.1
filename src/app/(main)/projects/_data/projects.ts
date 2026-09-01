@@ -79,12 +79,14 @@ export const PROJECTS = [
       liveDemo: "https://solenneuae.com", 
       github: "" 
     },
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1280&auto=format&fit=crop",
+    image: "/projects/solenne/64f1e72f-b8f5-4dd8-ab5a-636125ae1270.png",
     images: [
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1280&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200",
-      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200"
+      "/projects/solenne/64f1e72f-b8f5-4dd8-ab5a-636125ae1270.png",
+      "/projects/solenne/610f7579-0df6-473b-99c9-0abc335f248e.png",
+      "/projects/solenne/bece2180-a261-4350-92a8-0b870b51edc1.png",
+      "/projects/solenne/e06f6523-1fca-46dd-9780-15a42ac95f9f.png",
+      "/projects/solenne/eaa2cf4f-5a63-48dc-8114-4287dad75f0b.png",
+      "/projects/solenne/8fe1a01a-119f-42e7-9e67-cc4d5727529d.png"
     ],
     overview: "Solenne is an ultra-exclusive, invitation-only lifestyle membership platform built for discerning individuals seeking preferred rates and privileges across top-tier longevity clinics, high-performance movement studios, spa retreats, and fine dining destinations (including SIRO One Za'abeel, Guerlain Spa, and Dorchester Collection). The platform provides a secure digital membership card, interactive partner directory, and tiered privilege redemption.",
     problem: "High-end lifestyle concierge platforms often rely on fragmented physical cards or cluttered booking portals that detract from a luxury brand experience. The client needed a pixel-perfect, minimalist, and ultra-fast web application that provides frictionless digital membership management, interactive geolocation partner discovery, and secure annual subscription workflows.",
