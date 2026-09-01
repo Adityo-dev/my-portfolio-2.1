@@ -20,7 +20,7 @@ export const ProjectCard = ({ project, forceRegularLayout = false }: { project: 
       className={`group flex flex-col ${isFeatured ? 'lg:flex-row' : ''} bg-[#1A1B21] border border-white/[0.08] rounded-md overflow-hidden transition-colors hover:border-white/[0.18] hover:bg-[#22242C] h-full shadow-md`}
     >
       {/* Image Section */}
-      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-[#0A0B0D] border-white/[0.08] ${isFeatured ? 'w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:w-[55%] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
+      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-[#0A0B0D] border-white/[0.08] ${isFeatured ? 'w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:w-[50%] min-h-[240px] sm:min-h-[300px] lg:min-h-[380px] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
         <Image 
           src={project.image} 
           alt={project.title} 
@@ -31,7 +31,7 @@ export const ProjectCard = ({ project, forceRegularLayout = false }: { project: 
       </Link>
 
       {/* Content Section */}
-      <div className={`flex flex-col flex-1 p-5 ${isFeatured ? 'lg:p-8' : ''}`}>
+      <div className={`flex flex-col flex-1 p-5 ${isFeatured ? 'p-6 lg:p-7 justify-between' : ''}`}>
         
         <div className="flex flex-wrap items-center gap-2 text-[10px] font-mono tracking-widest text-primary uppercase font-semibold mb-4">
           <span>{project.category}</span>
