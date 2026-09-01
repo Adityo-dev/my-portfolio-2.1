@@ -15,7 +15,7 @@ const EXPERIENCES = [
       "Own architecture decisions across frontend, backend, and deployment",
       "Manage client communication, scoping, and project delivery directly"
     ],
-    tags: ["Next.js", "TypeScript", "Node.js", "Express.js"]
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
   },
   {
     period: "Nov 2025 — Sep 2026 (10 mos)",
