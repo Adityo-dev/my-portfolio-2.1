@@ -33,8 +33,14 @@ export const ProjectCard = ({ project, forceRegularLayout = false }: { project: 
       {/* Content Section */}
       <div className={`flex flex-col flex-1 p-5 ${isFeatured ? 'lg:p-8' : ''}`}>
         
-        <div className="flex items-center gap-2 text-[10px] font-mono tracking-widest text-primary uppercase font-semibold mb-4">
+        <div className="flex flex-wrap items-center gap-2 text-[10px] font-mono tracking-widest text-primary uppercase font-semibold mb-4">
           <span>{project.category}</span>
+          {project.subcategory && (
+            <>
+              <span className="text-white/30">•</span>
+              <span className="text-[#9B9DA6] font-normal">{project.subcategory}</span>
+            </>
+          )}
           <span className="text-white/30">/</span>
           <span>{project.year}</span>
         </div>

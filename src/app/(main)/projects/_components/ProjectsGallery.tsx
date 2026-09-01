@@ -10,9 +10,14 @@ const CATEGORIES = ["All", "Full Stack", "Frontend", "Dashboard", "E-commerce", 
 export const ProjectsGallery = () => {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects = PROJECTS.filter(project => 
-    activeCategory === "All" || project.category === activeCategory
-  );
+  const filteredProjects = PROJECTS.filter(project => {
+    if (activeCategory === "All") return true;
+    const cat = activeCategory.toLowerCase();
+    const mainCategoryMatch = project.category?.toLowerCase() === cat;
+    const subCategoryMatch = project.subcategory?.toLowerCase() === cat;
+    const tagMatch = project.tags?.some(tag => tag.toLowerCase() === cat);
+    return mainCategoryMatch || subCategoryMatch || tagMatch;
+  });
 
   return (
     <section className="relative w-full bg-[#131419] border-t border-white/[0.08] pb-24 pt-12">
