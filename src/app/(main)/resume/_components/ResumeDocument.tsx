@@ -131,9 +131,9 @@ export const ResumeDocument = () => {
                 tags: "Next.js 16 · TypeScript · Tailwind CSS · shadcn/ui · NestJS · Mapbox · Prisma"
               },
               {
-                title: "Kravu Store — Modern E-commerce Experience",
-                description: "A storefront covering catalogue browsing, cart, checkout and order history with a clean, conversion-focused product flow.",
-                tags: "Next.js · TypeScript · Tailwind CSS · Node.js · MongoDB"
+                title: "XStore — Dynamic E-Commerce Storefront",
+                description: "A high-performance e-commerce web application featuring instantaneous multi-filtering, reactive global cart persistence, and a streamlined checkout flow.",
+                tags: "Next.js 16 · TypeScript · Tailwind CSS · Zustand · Redux Toolkit · Node.js · Express.js"
               },
               {
                 title: "Practi — Practitioner Booking SaaS",
