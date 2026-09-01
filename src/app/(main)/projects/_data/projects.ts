@@ -18,6 +18,12 @@ export const PROJECTS = [
     images: [
       "/projects/edunext/full.png",
       "/projects/edunext/hero.png",
+      "/projects/edunext/figma-to-nextjs-pixel-accurate-landing-page.png",
+      "/projects/edunext/361ce697-ff65-4e0c-a01c-75f82d5063f4.png",
+      "/projects/edunext/428aba94-e1ac-44b5-9502-a4c8d56b7532.png",
+      "/projects/edunext/73594bf3-c388-4d29-9eab-67f3fa7e38df.png",
+      "/projects/edunext/d18a0929-a17d-4ce0-a402-45199fe02eb6.png",
+      "/projects/edunext/d5fc6885-e776-4131-afbb-cd934b1e661b.png",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784372699/edunext_images/dmy3zjvbiudost93jhg4.jpg",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784370491/edunext_images/drdka3llywsozsmmingd.jpg",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784370996/edunext_images/eloreexpxglomuuhzaza.jpg"
