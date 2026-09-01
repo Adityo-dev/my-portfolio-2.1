@@ -15,12 +15,12 @@ const CASE_STUDIES = [
     result: "Automated PDF certificates unlock only upon scoring pass marks, with sub-100ms API latency."
   },
   {
-    id: "nexus",
-    title: "Nexus Admin",
-    subtitle: "Analytics & Role-Based Dashboard",
-    problem: "Every dashboard project restarted the same work — auth, table state, permission handling — and each rebuild introduced slightly different behaviour and its own bugs.",
-    solution: "I extracted the recurring parts into a typed, composable layer: one table primitive that owns sorting, filtering and pagination state, one permission hook that drives both navigation and action visibility, and a chart wrapper with consistent loading, empty and error states.",
-    result: "New dashboard projects start with auth, tables and permissions already solved."
+    id: "solenne-luxury-membership",
+    title: "Solenne",
+    subtitle: "Luxury Lifestyle & Wellness Membership",
+    problem: "High-end concierge platforms relied on fragmented physical cards and cluttered portals that detracted from a luxury experience.",
+    solution: "Architected a minimalist Next.js frontend with interactive geolocation mapping, multi-filters, and an encrypted digital member pass.",
+    result: "Achieved 98+ Lighthouse score with 60fps smooth map filtering across 60+ luxury Dubai partners."
   },
   {
     id: "kravu",

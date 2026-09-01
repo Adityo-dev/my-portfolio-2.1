@@ -123,12 +123,12 @@ export const ResumeDocument = () => {
               {
                 title: "EduNext — Next-Gen Full-Stack LMS Platform",
                 description: "A production-ready enterprise EdTech ecosystem featuring dynamic course curriculums, interactive pass-mark quizzes, verified PDF certification, and role-based access control.",
-                tags: "Next.js 15 · TypeScript · Tailwind CSS · Node.js · Express.js · MongoDB · REST API"
+                tags: "Next.js 16 · TypeScript · Tailwind CSS · Node.js · Express.js · MongoDB · REST API"
               },
               {
-                title: "Nexus Admin — Analytics & Role-Based Dashboard",
-                description: "An admin dashboard with data tables, charts, permissions and audit-friendly activity views, built as a reusable foundation.",
-                tags: "React · TypeScript · Tailwind CSS · Recharts · REST API"
+                title: "Solenne — Luxury Lifestyle & Wellness Membership",
+                description: "An exclusive invitation-only digital lifestyle membership platform connecting elite members to luxury wellness and dining destinations across the UAE.",
+                tags: "Next.js 16 · TypeScript · Tailwind CSS · shadcn/ui · NestJS · Mapbox · Prisma"
               },
               {
                 title: "Kravu Store — Modern E-commerce Experience",

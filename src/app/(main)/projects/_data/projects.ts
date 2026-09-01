@@ -8,7 +8,7 @@ export const PROJECTS = [
     role: "Lead Full-Stack Web Developer — System Architecture, REST API Engine & UI Design",
     title: "EduNext — Next-Gen Full-Stack LMS & Skill Assessment Platform",
     description: "A production-ready enterprise EdTech ecosystem featuring dynamic course curriculums, interactive pass-mark quizzes, verified PDF certification, and role-based access control.",
-    tags: ["Next.js 15", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "REST API"],
+    tags: ["Next.js 16", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "REST API"],
     links: { 
       caseStudy: "/projects/edunext-lms-platform", 
       liveDemo: "https://edunext-six.vercel.app", 
@@ -37,13 +37,13 @@ export const PROJECTS = [
       "Optimized Media Delivery: CDN-hosted video integration and Cloudinary asset optimization across responsive viewport breakpoints."
     ],
     architecture: [
-      { id: "01", title: "Next.js 15 App Router", desc: "Server-side page rendering, metadata optimization, and fluid client interactive modules" },
+      { id: "01", title: "Next.js 16 App Router", desc: "Server-side page rendering, metadata optimization, and fluid client interactive modules" },
       { id: "02", title: "Express.js REST Engine", desc: "JWT-secured API endpoints with Bcrypt password hashing and custom RBAC middleware" },
       { id: "03", title: "MongoDB & Mongoose ODM", desc: "Compound-indexed collections for courses, user progress schemas, and quiz evaluation logs" },
       { id: "04", title: "Cloudinary & CDN Pipeline", desc: "Optimized image and document asset delivery with minimal initial payload footprint" }
     ],
     technologyMatrix: [
-      { category: "FRONTEND", items: ["Next.js 15", "TypeScript", "Tailwind CSS", "Lucide React", "TipTap Editor", "Framer Motion"] },
+      { category: "FRONTEND", items: ["Next.js 16", "TypeScript", "Tailwind CSS", "Lucide React", "TipTap Editor", "Framer Motion"] },
       { category: "BACKEND", items: ["Node.js", "Express.js", "RESTful API", "JWT Auth", "Bcrypt", "RBAC Middleware"] },
       { category: "DATA", items: ["MongoDB", "Mongoose ODM", "Cloudinary SDK"] },
       { category: "TOOLING", items: ["Vercel", "Render", "Git", "Cloudflare CDN"] }
@@ -62,6 +62,67 @@ export const PROJECTS = [
       "95+ Lighthouse Performance Score with optimized asset pipelines and Next.js Server Components",
       "100% Type Safety with end-to-end TypeScript contracts between frontend schemas and REST API response models",
       "Sub-100ms API Latency with compound MongoDB indexing under simulated high-concurrency requests"
+    ]
+  },
+  {
+    id: "solenne-luxury-membership",
+    featured: true,
+    category: "Frontend",
+    subcategory: "SaaS",
+    year: "2026",
+    role: "Frontend Engineer — UI Architecture, Interactive Map & Member Experience",
+    title: "Solenne — Invitation-Only Global Lifestyle & Wellness Membership Platform",
+    description: "An exclusive, invitation-only digital lifestyle membership web application connecting elite members to global luxury wellness, longevity, and culinary destinations across the UAE and worldwide.",
+    tags: ["Next.js 16", "TypeScript", "Tailwind CSS", "shadcn/ui", "NestJS", "Mapbox", "Prisma"],
+    links: { 
+      caseStudy: "/projects/solenne-luxury-membership", 
+      liveDemo: "https://solenneuae.com", 
+      github: "" 
+    },
+    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1280&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1280&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=1200",
+      "https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=1200",
+      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200"
+    ],
+    overview: "Solenne is an ultra-exclusive, invitation-only lifestyle membership platform built for discerning individuals seeking preferred rates and privileges across top-tier longevity clinics, high-performance movement studios, spa retreats, and fine dining destinations (including SIRO One Za'abeel, Guerlain Spa, and Dorchester Collection). The platform provides a secure digital membership card, interactive partner directory, and tiered privilege redemption.",
+    problem: "High-end lifestyle concierge platforms often rely on fragmented physical cards or cluttered booking portals that detract from a luxury brand experience. The client needed a pixel-perfect, minimalist, and ultra-fast web application that provides frictionless digital membership management, interactive geolocation partner discovery, and secure annual subscription workflows.",
+    solution: "Architected and built a bespoke, high-performance frontend using Next.js, TypeScript, Tailwind CSS, and Shadcn UI. Integrated interactive geolocation maps, smooth animated micro-interactions, category/location multi-filters, and an encrypted digital member pass interface designed for instant partner-side verification.",
+    keyFeatures: [
+      "Interactive Partner Privilege Network: Dynamic directory featuring 60+ luxury destinations with multi-dimensional filtering by Location (DIFC, Palm Jumeirah, Downtown, etc.), Activity (Cryotherapy, Contrast Therapy, Pilates, Dining), and Gender.",
+      "Interactive Venue Mapping: Smooth map exploration allowing members to visually locate curated wellness clubs and longevity spaces across Dubai and the UAE.",
+      "Digital Membership Card & Pass Verification: Encrypted, non-transferable digital membership UI for real-time validation at partner venues.",
+      "Founding Circle Subscription Flow: Clean, frictionless annual membership onboarding and renewal engine.",
+      "Curated Pillar Architecture: Dedicated discovery feeds categorised by Movement, Radiance, Recovery, Taste, and Escape.",
+      "Pixel-Perfect Luxury Aesthetic: Editorial typography, bespoke spacing, and dark/sand luxury color palettes engineered with Shadcn UI and Tailwind CSS."
+    ],
+    architecture: [
+      { id: "01", title: "Next.js 16 App Router", desc: "Bespoke editorial UI, SSR discovery feeds, and dynamic modal overlays" },
+      { id: "02", title: "NestJS Backend API", desc: "JWT-secured membership verification engine and privilege redemption logic" },
+      { id: "03", title: "Mapbox Geolocation", desc: "Smooth interactive venue mapping with debounced pin clusters and custom map styles" },
+      { id: "04", title: "PostgreSQL & Prisma", desc: "Relational data model for luxury partner venues, member passes, and privilege tiers" }
+    ],
+    technologyMatrix: [
+      { category: "FRONTEND", items: ["Next.js 16", "TypeScript", "Tailwind CSS", "shadcn/ui", "Lucide React", "Framer Motion"] },
+      { category: "BACKEND", items: ["NestJS", "REST API", "JWT Authentication"] },
+      { category: "DATA", items: ["PostgreSQL", "Prisma ORM"] },
+      { category: "TOOLING", items: ["Vercel", "Git", "Mapbox SDK", "Google Maps API"] }
+    ],
+    challenges: [
+      {
+        challenge: "Maintaining smooth 60fps rendering while filtering dozens of venue nodes and rendering map pin clusters simultaneously across mobile viewports.",
+        solution: "Implemented debounced state filtering, client-side memoization (useMemo), and lazy-loaded map canvas layers to eliminate UI stutter during fast location switching."
+      },
+      {
+        challenge: "Designing an ultra-luxury, high-converting digital card interface that looks premium and prevents unauthorized screenshot sharing at partner desks.",
+        solution: "Crafted a reactive digital pass component with real-time dynamic timestamping and watermarking, integrated into a clean Shadcn modal dialog."
+      }
+    ],
+    results: [
+      "98+ Performance & Accessibility Score: Exceptional mobile responsiveness and sub-second First Contentful Paint (FCP) across all luxury landing pages.",
+      "Smooth Multi-Filtering Experience: Zero-latency instantaneous category switching across 60+ partner venues and wellness categories.",
+      "High-Converting Membership Onboarding: Delivered a frictionless 3-step membership checkout experience for Founding Circle members."
     ]
   },
   {
