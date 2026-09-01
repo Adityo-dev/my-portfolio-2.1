@@ -15,7 +15,7 @@ const EXPERIENCES = [
       "Own architecture decisions across frontend, backend, and deployment",
       "Manage client communication, scoping, and project delivery directly"
     ],
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
+    tags: ["React.js","Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
   },
   {
     period: "Nov 2025 — Sep 2026 (10 mos)",
@@ -28,7 +28,7 @@ const EXPERIENCES = [
       "Implemented authentication systems, dashboards, and REST API integrations",
       "Collaborated with cross-functional teams to deliver production-ready applications"
     ],
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
+    tags: ["React.js","Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
   },
   {
     period: "Jan 2023 — Mar 2024 (1 yr 2 mos)",
@@ -41,7 +41,7 @@ const EXPERIENCES = [
       "Collaborated with backend and design teams to ship features on schedule",
       "Turned design mockups into functional, production-ready interfaces"
     ],
-    tags: ["React", "Next.js", "Redux", "JavaScript", "HTML", "CSS"]
+    tags: ["React.js", "Next.js", "Redux", "JavaScript", "HTML", "CSS"]
   }
 ];
 

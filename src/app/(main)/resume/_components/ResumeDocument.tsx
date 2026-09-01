@@ -121,9 +121,9 @@ export const ResumeDocument = () => {
           <div className="flex flex-col border-t border-white/5">
             {[
               {
-                title: "Fikiara — Online Learning Platform",
-                description: "A full-stack learning platform where instructors publish structured courses and students track lesson-by-lesson progress.",
-                tags: "Next.js · TypeScript · Tailwind CSS · Node.js · PostgreSQL · REST API"
+                title: "EduNext — Next-Gen Full-Stack LMS Platform",
+                description: "A production-ready enterprise EdTech ecosystem featuring dynamic course curriculums, interactive pass-mark quizzes, verified PDF certification, and role-based access control.",
+                tags: "Next.js 15 · TypeScript · Tailwind CSS · Node.js · Express.js · MongoDB · REST API"
               },
               {
                 title: "Nexus Admin — Analytics & Role-Based Dashboard",

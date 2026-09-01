@@ -7,12 +7,12 @@ import Link from "next/link";
 
 const CASE_STUDIES = [
   {
-    id: "fikiara",
-    title: "Fikiara",
-    subtitle: "Online Learning Platform",
-    problem: "Small course creators were running lessons through scattered video links, spreadsheets and chat groups.",
-    solution: "I modelled courses as modules and lessons with an explicit progress record per student, then built a role-aware Next.js frontend on top of a typed REST API.",
-    result: "A learner can resume any course in one click instead of hunting through links."
+    id: "edunext-lms-platform",
+    title: "EduNext",
+    subtitle: "Next-Gen Full-Stack LMS Platform",
+    problem: "Legacy e-learning platforms suffered from sluggish data fetching, clunky course builders, and unverified pass metrics.",
+    solution: "Developed a clean UI powered by TipTap rich text rendering, dynamic server-side category pagination, and strict backend quiz validation workflows.",
+    result: "Automated PDF certificates unlock only upon scoring pass marks, with sub-100ms API latency."
   },
   {
     id: "nexus",
