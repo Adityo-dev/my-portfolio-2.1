@@ -20,14 +20,13 @@ export const ProjectCard = ({ project, forceRegularLayout = false }: { project: 
       className={`group flex flex-col ${isFeatured ? 'lg:flex-row' : ''} bg-[#1A1B21] border border-white/[0.08] rounded-md overflow-hidden transition-colors hover:border-white/[0.18] hover:bg-[#22242C] h-full shadow-md`}
     >
       {/* Image Section */}
-      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-[#0A0B0D]/50 border-white/[0.08] ${isFeatured ? 'w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:w-[55%] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
-        <div className="absolute inset-0 bg-[#0A0B0D] mix-blend-color z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
+      <Link href={`/projects/${project.id}`} className={`relative block overflow-hidden bg-[#0A0B0D] border-white/[0.08] ${isFeatured ? 'w-full aspect-[16/10] sm:aspect-video lg:aspect-auto lg:w-[55%] lg:border-r border-b lg:border-b-0' : 'w-full aspect-[4/3] border-b'}`}>
         <Image 
           src={project.image} 
           alt={project.title} 
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105"
+          className="object-cover transition-all duration-700 group-hover:scale-105"
         />
       </Link>
 
