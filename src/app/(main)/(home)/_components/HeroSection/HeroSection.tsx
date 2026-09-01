@@ -42,7 +42,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mb-8"
             >
-              I design and build high-performance web applications with React, Next.js, and TypeScript. Transforming complex ideas into seamless, production-ready software.
+              I build modern digital experiences and full-stack web applications using React, Next.js, TypeScript and modern web technologies — from data model to deployed interface.
             </motion.p>
 
             {/* Action Buttons */}
