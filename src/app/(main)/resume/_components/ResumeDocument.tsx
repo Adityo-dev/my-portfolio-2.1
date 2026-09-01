@@ -136,19 +136,9 @@ export const ResumeDocument = () => {
                 tags: "Next.js 16 · TypeScript · Tailwind CSS · Zustand · Redux Toolkit · Node.js · Express.js"
               },
               {
-                title: "Practi — Practitioner Booking SaaS",
-                description: "A scheduling application where practitioners manage availability and clients book confirmed slots without back-and-forth messaging.",
-                tags: "Next.js · TypeScript · Node.js · PostgreSQL · REST API"
-              },
-              {
-                title: "Aura Interiors — Studio Business Website",
-                description: "A fast, editorial marketing site for a design studio, built for lead capture and strong search visibility.",
-                tags: "Next.js · TypeScript · Tailwind CSS · Framer Motion"
-              },
-              {
-                title: "API Lab — Request & Response Playground",
-                description: "An experimental in-browser client for exploring REST endpoints, inspecting responses and saving request collections.",
-                tags: "React · TypeScript · Tailwind CSS"
+                title: "Dinisoft — Cloud Hosting & IT Infrastructure",
+                description: "A high-converting web hosting and IT infrastructure storefront featuring dynamic pricing matrixes, interactive mega-navigation, and domain lookup interfaces.",
+                tags: "React · Next.js 16 · TypeScript · Tailwind CSS · Lucide Icons · Mega Menu"
               }
             ].map((project, idx) => (
               <div key={idx} className="py-8 border-b border-white/5">
