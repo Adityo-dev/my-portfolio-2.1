@@ -131,7 +131,7 @@ export const PROJECTS = [
     id: "xstore-modern-ecommerce",
     featured: false,
     category: "Full Stack",
-    subcategory: "Retail",
+    subcategory: "E-commerce",
     year: "2026",
     role: "Full Stack Developer — Frontend Architecture, State Management & API Integration",
     title: "XStore — Dynamic E-Commerce Storefront with Real-Time Cart & Multi-Filter Engine",
