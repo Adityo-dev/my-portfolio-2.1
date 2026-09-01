@@ -29,6 +29,14 @@ const CASE_STUDIES = [
     problem: "Traditional e-commerce platforms suffered from sluggish page reloads during filtering and cart state desynchronization across tabs.",
     solution: "Architected a lightweight Next.js storefront with Zustand client state, LocalStorage hydration, and zero-latency product search.",
     result: "Sub-second interaction response with 96+ mobile performance rating and 100% cart sync."
+  },
+  {
+    id: "dinisoft-hosting-landing",
+    title: "Dinisoft",
+    subtitle: "Cloud Hosting & IT Infrastructure",
+    problem: "Broad server service catalogs suffered from navigation clutter, slow mobile rendering, and confusing pricing grids.",
+    solution: "Engineered a multi-tier mega navbar, interactive domain lookup hero, and structured hosting plan comparison matrixes.",
+    result: "Achieved 95+ mobile usability score with sub-second landing render and intuitive service discovery pathways."
   }
 ];
 
@@ -65,7 +73,7 @@ export const CaseStudiesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
-            Three projects broken down the way a client or reviewer would want to read them.
+            Four projects broken down the way a client or reviewer would want to read them.
           </motion.p>
           </div>
         </div>
