@@ -20,7 +20,7 @@ export const ResumeDocument = () => {
             01 — SUMMARY
           </h2>
           <p className="text-[16px] sm:text-[17px] leading-relaxed text-muted-foreground">
-            Full Stack Developer building modern, scalable web applications with React, Next.js, TypeScript and Node.js. Experienced across authentication, role-based systems, admin dashboards, commerce flows and REST API integration, with an emphasis on maintainable architecture and responsive, accessible interfaces.
+            Full Stack Developer building modern, scalable web applications with React, Next.js, TypeScript, Node.js and Express.js. Experienced across authentication systems, REST APIs, admin dashboards, role-based access control and database integrations with an emphasis on maintainable architecture and production-ready applications.
           </p>
         </motion.div>
 
@@ -31,9 +31,9 @@ export const ResumeDocument = () => {
           </h2>
           <div className="flex flex-col border-t border-white/5">
             {[
-              { label: "Frontend", value: "HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS" },
-              { label: "UI", value: "shadcn/ui, Framer Motion, Headless UI" },
-              { label: "Backend", value: "Node.js, Express, REST API, Authentication" },
+              { label: "Frontend", value: "HTML, CSS, JavaScript, TypeScript, React, Next.js, Redux, Redux Toolkit, Tailwind CSS, shadcn/ui" },
+              { label: "UI & Forms", value: "Framer Motion, React Hook Form, Zod" },
+              { label: "Backend", value: "Node.js, Express.js, REST API, Authentication" },
               { label: "Database", value: "PostgreSQL, MongoDB" },
               { label: "Tools", value: "Git, GitHub, VS Code, Figma, Vercel, pnpm" }
             ].map((skill, idx) => (
@@ -55,16 +55,19 @@ export const ResumeDocument = () => {
             <div>
               <div className="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 mb-4">
                 <h3 className="text-[17px] font-semibold text-foreground">
-                  Freelance Full Stack Developer <span className="text-muted-foreground font-normal">· Independent</span>
+                  Full Stack Developer <span className="text-muted-foreground font-normal">· Wexlye</span>
                 </h3>
                 <span className="text-[11px] font-mono tracking-widest text-muted-foreground uppercase">
-                  2024 — Present
+                  Jun 2026 — Present
                 </span>
               </div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-[15px] text-muted-foreground leading-relaxed">
-                <li>Delivered business websites and dashboards from first call to deployment</li>
-                <li>Owned data modelling, API design and frontend architecture on each build</li>
-                <li>Handled deployment, domain setup and post-launch fixes</li>
+              <p className="text-[15px] text-muted-foreground leading-relaxed mb-3">
+                Running my own web development agency, working directly with clients on complete web applications — from initial scoping through deployment. Handling both frontend and backend architecture, and owning the full delivery process end to end.
+              </p>
+              <ul className="list-disc list-outside ml-4 space-y-1.5 text-[14px] text-muted-foreground leading-relaxed">
+                <li>Deliver full-stack web applications for international clients, end to end</li>
+                <li>Own architecture decisions across frontend, backend, and deployment</li>
+                <li>Manage client communication, scoping, and project delivery directly</li>
               </ul>
             </div>
             
@@ -72,16 +75,19 @@ export const ResumeDocument = () => {
             <div>
               <div className="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 mb-4">
                 <h3 className="text-[17px] font-semibold text-foreground">
-                  Independent Product Builds <span className="text-muted-foreground font-normal">· Personal projects</span>
+                  Full Stack Developer <span className="text-muted-foreground font-normal">· Softvence Agency (part of Betopia Group)</span>
                 </h3>
                 <span className="text-[11px] font-mono tracking-widest text-muted-foreground uppercase">
-                  2023 — Present
+                  Nov 2025 — Sep 2026 (10 mos)
                 </span>
               </div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-[15px] text-muted-foreground leading-relaxed">
-                <li>Built a learning platform with three roles and per-student progress</li>
-                <li>Extracted a reusable dashboard foundation from repeated client work</li>
-                <li>Shipped a full commerce flow through to order management</li>
+              <p className="text-[15px] text-muted-foreground leading-relaxed mb-3">
+                Developed modern, scalable, and responsive web applications for international clients using React, Next.js, TypeScript, Node.js, and Express.js. Built reusable UI components, REST APIs, authentication systems, dashboards, and database integrations.
+              </p>
+              <ul className="list-disc list-outside ml-4 space-y-1.5 text-[14px] text-muted-foreground leading-relaxed">
+                <li>Built and shipped production features across the full stack for external clients</li>
+                <li>Implemented authentication systems, dashboards, and REST API integrations</li>
+                <li>Collaborated with cross-functional teams to deliver production-ready applications</li>
               </ul>
             </div>
 
@@ -89,15 +95,19 @@ export const ResumeDocument = () => {
             <div>
               <div className="flex flex-col sm:flex-row justify-between sm:items-baseline gap-2 mb-4">
                 <h3 className="text-[17px] font-semibold text-foreground">
-                  Frontend Foundations <span className="text-muted-foreground font-normal">· Self-directed learning</span>
+                  Frontend Developer <span className="text-muted-foreground font-normal">· Ecoysoft</span>
                 </h3>
                 <span className="text-[11px] font-mono tracking-widest text-muted-foreground uppercase">
-                  2023
+                  Jan 2023 — Mar 2024 (1 yr 2 mos)
                 </span>
               </div>
-              <ul className="list-disc list-outside ml-4 space-y-2 text-[15px] text-muted-foreground leading-relaxed">
-                <li>Rebuilt production-grade interfaces to learn layout and accessibility</li>
-                <li>Moved from JavaScript to TypeScript across all new work</li>
+              <p className="text-[15px] text-muted-foreground leading-relaxed mb-3">
+                Built responsive and user-friendly web interfaces using React and modern JavaScript. Collaborated closely with backend and design teams to implement clean, reusable UI components and deliver features on time.
+              </p>
+              <ul className="list-disc list-outside ml-4 space-y-1.5 text-[14px] text-muted-foreground leading-relaxed">
+                <li>Built responsive, reusable UI components with React and modern JavaScript</li>
+                <li>Collaborated with backend and design teams to ship features on schedule</li>
+                <li>Turned design mockups into functional, production-ready interfaces</li>
               </ul>
             </div>
           </div>

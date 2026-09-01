@@ -5,39 +5,43 @@ import { motion } from "framer-motion";
 
 const EXPERIENCES = [
   {
-    period: "2024 — Present",
-    company: "Independent",
-    role: "Freelance Full Stack Developer",
-    description: "Working directly with small businesses and studios: scoping the requirement, building the application and handing over something they can operate themselves.",
+    period: "Jun 2026 — Present",
+    company: "Agency",
+    role: "Full Stack Developer",
+    titleCompany: "Wexlye",
+    description: "Running my own web development agency, working directly with clients on complete web applications — from initial scoping through deployment. Handling both frontend and backend architecture, and owning the full delivery process end to end.",
     highlights: [
-      "Delivered business websites and dashboards from first call to deployment",
-      "Owned data modelling, API design and frontend architecture on each build",
-      "Handled deployment, domain setup and post-launch fixes"
+      "Deliver full-stack web applications for international clients, end to end",
+      "Own architecture decisions across frontend, backend, and deployment",
+      "Manage client communication, scoping, and project delivery directly"
     ],
-    tags: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"]
+    tags: ["Next.js", "TypeScript", "Node.js", "Express.js"]
   },
   {
-    period: "2023 — Present",
-    company: "Personal projects",
-    role: "Independent Product Builds",
-    description: "Building complete products end to end to learn the parts a tutorial skips — authorization, state that survives reloads, and architecture that survives the second feature.",
+    period: "Nov 2025 — Sep 2026 (10 mos)",
+    company: "Full-time · Softvence Agency",
+    role: "Full Stack Developer",
+    titleCompany: "Softvence Agency (part of Betopia Group)",
+    description: "Developed modern, scalable, and responsive web applications for international clients using React, Next.js, TypeScript, Node.js, and Express.js. Built reusable UI components, REST APIs, authentication systems, dashboards, and database integrations while collaborating with cross-functional teams to deliver reliable, production-ready applications.",
     highlights: [
-      "Built a learning platform with three roles and per-student progress",
-      "Extracted a reusable dashboard foundation from repeated client work",
-      "Shipped a full commerce flow through to order management"
+      "Built and shipped production features across the full stack for external clients",
+      "Implemented authentication systems, dashboards, and REST API integrations",
+      "Collaborated with cross-functional teams to deliver production-ready applications"
     ],
-    tags: ["React", "REST API", "MongoDB", "Tailwind CSS"]
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Redux Toolkit", "shadcn/ui", "React Hook Form", "Zod", "Node.js", "Express.js", "MongoDB"]
   },
   {
-    period: "2023",
-    company: "Self-directed learning",
-    role: "Frontend Foundations",
-    description: "Started with HTML, CSS and JavaScript, then moved into React and TypeScript by rebuilding real interfaces rather than following along.",
+    period: "Jan 2023 — Mar 2024 (1 yr 2 mos)",
+    company: "Full-time · Ecoysoft",
+    role: "Frontend Developer",
+    titleCompany: "Ecoysoft",
+    description: "Built responsive and user-friendly web interfaces using React and modern JavaScript. Collaborated closely with backend and design teams to implement clean, reusable UI components and deliver features on time. Gained hands-on experience turning designs into functional, production-ready web pages.",
     highlights: [
-      "Rebuilt production-grade interfaces to learn layout and accessibility",
-      "Moved from JavaScript to TypeScript across all new work"
+      "Built responsive, reusable UI components with React and modern JavaScript",
+      "Collaborated with backend and design teams to ship features on schedule",
+      "Turned design mockups into functional, production-ready interfaces"
     ],
-    tags: ["HTML", "CSS", "JavaScript", "React"]
+    tags: ["React", "Next.js", "Redux", "JavaScript", "HTML", "CSS"]
   }
 ];
 
@@ -74,7 +78,7 @@ export const ExperienceSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
-            Freelance delivery and independent product builds — the work where I owned the decisions, not just the tickets.
+            Full-stack delivery across an agency, freelance clients, and independent product builds — three years of shipping production applications.
           </motion.p>
           </div>
         </div>
@@ -103,7 +107,7 @@ export const ExperienceSection = () => {
               {/* Right Column: Role & Details */}
               <div className="md:col-span-3 flex flex-col gap-5 max-w-3xl">
                 <h3 className="text-xl sm:text-2xl font-semibold text-[#F7F7F5] tracking-tight">
-                  {exp.role}
+                  {exp.role} <span className="text-[#9B9DA6] font-normal text-lg sm:text-xl">· {exp.titleCompany}</span>
                 </h3>
                 
                 <p className="text-[15px] leading-relaxed text-[#9B9DA6]">
