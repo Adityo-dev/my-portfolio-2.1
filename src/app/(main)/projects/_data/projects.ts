@@ -248,5 +248,167 @@ export const PROJECTS = [
       "Enhanced User Journey: Reduced navigation clicks to primary hosting plans through structured mega-menu categorization.",
       "Sub-second Landing Render: Lightweight, optimized assets and clean CSS structure for minimal initial bundle payload."
     ]
+  },
+  {
+    id: "xtra-vision-dynamic-platform",
+    featured: false,
+    category: "Full Stack",
+    subcategory: "Retail",
+    year: "2026",
+    role: "Full Stack Frontend Engineer — Dynamic CMS Architecture, UI & REST API Integration",
+    title: "Xtra-Vision — Enterprise Storefront with 80% Content-Managed Admin Dashboard",
+    description: "A robust Irish entertainment and retail platform featuring a high-performance storefront and a bespoke admin dashboard allowing 80% of landing text, media, banners, and categories to be modified dynamically.",
+    tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Axios", "Zod", "REST API"],
+    links: { 
+      caseStudy: "/projects/xtra-vision-dynamic-platform", 
+      liveDemo: "https://xtra-vision.ie", 
+      github: "" 
+    },
+    image: "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1280&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1280&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200",
+      "https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1200",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200"
+    ],
+    overview: "Xtra-Vision is a recognized retail and digital entertainment brand in Ireland. Built a fully responsive web storefront coupled with a powerful administrative management portal that gives non-technical administrators direct real-time control over 70%–80% of landing page hero banners, product promo blocks, category highlights, and editorial copy.",
+    problem: "Frequent marketing updates and promotional campaign changes required developer intervention for minor text and image revisions, causing operational delays and high maintenance overhead.",
+    solution: "Engineered a decoupled, dynamic frontend architecture with Next.js/React and Tailwind CSS connected to backend REST APIs. Built a granular admin dashboard where admins can update home sections, banner URLs, promo titles, and media assets on the fly with instant live storefront reflection.",
+    keyFeatures: [
+      "80% Dynamic Content Engine: Real-time management of hero banners, promo copy, promotional strips, and footer details from the admin panel.",
+      "Admin Management Dashboard: Secure admin portal for media uploads, text updates, category curation, and promotional scheduling.",
+      "Product & Rental Catalog UI: High-converting, categorized catalog showcase with responsive image galleries and availability badges.",
+      "Optimized Media Delivery: CDN-cached asset pipeline delivering instantaneous image updates without degrading Core Web Vitals.",
+      "Dynamic Navigation & Footer Sync: Navigation routes and footer policies update automatically based on backend configurations."
+    ],
+    architecture: [
+      { id: "01", title: "Next.js Storefront", desc: "High performance client rendering with ISR tag revalidation for dynamic CMS edits" },
+      { id: "02", title: "Admin Portal Shell", desc: "Granular administrative dashboard for hero banners, promo copy, and category management" },
+      { id: "03", title: "Zod & Form Engine", desc: "Type-safe validation schemas for dynamic content mutations" },
+      { id: "04", title: "Cloudinary / AWS Pipeline", desc: "CDN-cached media management pipeline with instant asset optimization" }
+    ],
+    technologyMatrix: [
+      { category: "FRONTEND", items: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Lucide React", "Axios"] },
+      { category: "DASHBOARD & STATE", items: ["React Hook Form", "Zod Validation", "Context API", "Zustand"] },
+      { category: "API & STORAGE", items: ["RESTful API Integration", "Cloudinary", "AWS S3 Pipeline"] },
+      { category: "TOOLING", items: ["Vercel", "Git"] }
+    ],
+    challenges: [
+      {
+        challenge: "Ensuring that frequent admin text/image mutations reflect instantly without breaking complex CSS grid layouts or triggering slow SSR revalidation.",
+        solution: "Designed resilient, fluid CSS layouts with fallback content states and on-demand ISR (Incremental Static Regeneration) tag revalidation."
+      }
+    ],
+    results: [
+      "80% Reduction in Maintenance Time: Marketing teams independently deploy promotional copy and banners without engineering support.",
+      "100% Dynamic Landing Sections: Zero hardcoded strings across primary promotional sections."
+    ]
+  },
+  {
+    id: "transform-to-liberation",
+    featured: false,
+    category: "Full Stack",
+    subcategory: "Healthcare",
+    year: "2025",
+    role: "Frontend & Dashboard Engineer — End-to-End UI, API Integration & Booking Flow",
+    title: "Transform To Liberation — Wellness Coaching, Booking & Event Hub with Admin Portal",
+    description: "A transformative wellness and life coaching platform featuring client onboarding, workshop event schedules, consultation booking, and a full-featured admin management panel.",
+    tags: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "JWT Auth", "REST API"],
+    links: { 
+      caseStudy: "/projects/transform-to-liberation", 
+      liveDemo: "https://www.transformtoliberation.com", 
+      github: "" 
+    },
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1280&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1280&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=1200",
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200",
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200"
+    ],
+    overview: "Transform To Liberation is an empowering personal development, wellness coaching, and workshop platform. Developed both the public-facing brand website and the private administrative dashboard, handling consultation appointments, event calendars, client testimonials, and full-stack REST API communication.",
+    problem: "The client needed a serene, trustworthy brand presence combined with automated session bookings and an intuitive backend dashboard to manage client applications, live workshop rosters, and blog content without technical friction.",
+    solution: "Delivered a responsive web application featuring custom booking funnels, interactive event schedules, and testimonial sliders. Built an administrative dashboard enabling effortless event creation, booking status management, and inquiry tracking via RESTful APIs.",
+    keyFeatures: [
+      "Interactive Booking & Consultation Flow: Multi-step inquiry and discovery session scheduling interface with form validation.",
+      "Workshop & Event Schedule Manager: Dynamic calendar listing upcoming group retreats, masterclasses, and digital workshops.",
+      "Full-Featured Admin Dashboard: Real-time management of workshop listings, client booking requests, and media galleries.",
+      "Testimonials & Transformation Stories: High-converting video/text story modules highlighting client success milestones.",
+      "Brand-Focused UI/UX: Warm, earthy aesthetics with smooth micro-interactions built with Tailwind CSS and Framer Motion."
+    ],
+    architecture: [
+      { id: "01", title: "Next.js Web Engine", desc: "Serene client-facing portal with smooth page transitions" },
+      { id: "02", title: "Booking Funnel Logic", desc: "Multi-step inquiry routing with client-side form validation" },
+      { id: "03", title: "Admin Management Portal", desc: "Real-time administrative control over workshops, bookings, and inquiries" },
+      { id: "04", title: "REST API Integration", desc: "JWT-authenticated API routes for calendar sync and client record updates" }
+    ],
+    technologyMatrix: [
+      { category: "FRONTEND", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"] },
+      { category: "DASHBOARD & FORMS", items: ["React Hook Form", "REST API Integration", "JWT Auth"] },
+      { category: "TOOLING & DEPLOYMENT", items: ["Vercel", "Git"] }
+    ],
+    challenges: [
+      {
+        challenge: "Managing appointment state and form validation across multi-step consultation booking funnels on mobile devices.",
+        solution: "Implemented modular state machines and client-side Zod validation schemas for error-free multi-step form submissions."
+      }
+    ],
+    results: [
+      "Streamlined Booking Operations: Automated consultation routing and inquiry tracking from a single dashboard.",
+      "98+ Mobile Accessibility: Warm, accessible typography and touch-optimized navigation across all devices."
+    ]
+  },
+  {
+    id: "knowmyslots-analytics",
+    featured: false,
+    category: "Frontend",
+    subcategory: "Analytics",
+    year: "2026",
+    role: "Frontend Developer — Pixel-Perfect Figma-to-React Conversion & State Logic",
+    title: "KnowMySlots — High-Fidelity Interactive Slot Analytics Platform (Figma to React)",
+    description: "A pixel-perfect, highly responsive gaming and slot statistics web application converted from complex Figma designs into clean, modular React and Tailwind CSS components.",
+    tags: ["React.js", "TypeScript", "Tailwind CSS", "Lucide React", "Figma Conversion"],
+    links: { 
+      caseStudy: "/projects/knowmyslots-analytics", 
+      liveDemo: "https://knowmyslots.vercel.app", 
+      github: "" 
+    },
+    image: "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=1280&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1518609878373-06d740f60d8b?q=80&w=1280&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1200",
+      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1200",
+      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1200"
+    ],
+    overview: "KnowMySlots is an interactive gaming and slot machine metrics platform designed to provide players with RTP (Return to Player) data, volatility ratings, game reviews, and provider breakdowns. Executed a 100% pixel-perfect conversion from detailed Figma design specifications into a modern React application.",
+    problem: "The client possessed intricate, high-contrast dark-mode Figma mockups featuring detailed data tables, slot cards, and complex responsive layouts that needed precise implementation without UI distortion or performance lag.",
+    solution: "Converted all UI views into clean, modular React components using Tailwind CSS and TypeScript. Built reusable slot card grids, interactive filter components, search inputs, and responsive layout structures matching the original design system down to the exact pixel.",
+    keyFeatures: [
+      "Pixel-Perfect Figma Conversion: 1:1 reproduction of complex dark-theme designs, typography, gradients, and custom slot card borders.",
+      "Interactive Slot Directory UI: Modular card layout showcasing slot game thumbnails, volatility badges, RTP percentages, and provider tags.",
+      "Client-Side Filtering & Search: Instant keyword search and provider dropdown filters for frictionless game discovery.",
+      "Responsive Data Grids: Fluid responsive grid system adapting flawlessly from mobile viewports to ultra-wide desktop monitors.",
+      "Clean Component Architecture: Decoupled, reusable UI primitives allowing easy future API integration."
+    ],
+    architecture: [
+      { id: "01", title: "React SPA Architecture", desc: "Modular component layout with optimized state handlers" },
+      { id: "02", title: "Tailwind Design Token System", desc: "Custom theme extensions for high-contrast dark-mode gaming aesthetics" },
+      { id: "03", title: "Client-Side Search Engine", desc: "Real-time slot filtering by provider, volatility rating, and RTP percentage" }
+    ],
+    technologyMatrix: [
+      { category: "FRONTEND", items: ["React.js", "TypeScript", "Tailwind CSS", "Lucide React"] },
+      { category: "DESIGN & SPEC", items: ["Figma Design System", "Pixel-Perfect Conversion"] },
+      { category: "TOOLING & DEPLOYMENT", items: ["Vercel", "Git"] }
+    ],
+    challenges: [
+      {
+        challenge: "Translating complex dark-mode glowing border effects and dense badge layouts from Figma into responsive Tailwind utility classes.",
+        solution: "Built reusable Tailwind component abstractions and custom gradient utilities that maintain performance and visual fidelity across all screen sizes."
+      }
+    ],
+    results: [
+      "100% Design Accuracy: Delivered a 1:1 pixel-perfect match to the client's Figma mockups on first review.",
+      "Sub-second Client-Side Navigation: Lightweight bundle size ensuring near-instant page transitions on Vercel edge deployment."
+    ]
   }
 ];

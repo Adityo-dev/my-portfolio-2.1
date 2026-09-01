@@ -41,7 +41,7 @@ export const ProjectsSection = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
             >
-              Four projects, strongest first — each with the stack it actually runs on and a way to see it for yourself.
+              Featured real-world projects, strongest first — each with the stack it actually runs on and a way to see it for yourself.
             </motion.p>
           </div>
 

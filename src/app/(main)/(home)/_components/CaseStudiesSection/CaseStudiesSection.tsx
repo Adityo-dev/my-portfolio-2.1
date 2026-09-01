@@ -37,6 +37,30 @@ const CASE_STUDIES = [
     problem: "Broad server service catalogs suffered from navigation clutter, slow mobile rendering, and confusing pricing grids.",
     solution: "Engineered a multi-tier mega navbar, interactive domain lookup hero, and structured hosting plan comparison matrixes.",
     result: "Achieved 95+ mobile usability score with sub-second landing render and intuitive service discovery pathways."
+  },
+  {
+    id: "xtra-vision-dynamic-platform",
+    title: "Xtra-Vision",
+    subtitle: "Enterprise Storefront & Custom CMS",
+    problem: "Frequent promotional updates required developer intervention for minor text and image revisions.",
+    solution: "Engineered a dynamic frontend with Next.js and REST APIs connected to a granular admin portal.",
+    result: "80% reduction in maintenance time with 100% dynamic landing section control."
+  },
+  {
+    id: "transform-to-liberation",
+    title: "Transform To Liberation",
+    subtitle: "Coaching, Community & Event Hub",
+    problem: "Needed a serene brand presence combined with automated session bookings and event management.",
+    solution: "Delivered a responsive web app with custom booking funnels, event schedules, and full admin portal.",
+    result: "Streamlined consultation booking operations with 98+ mobile accessibility."
+  },
+  {
+    id: "knowmyslots-analytics",
+    title: "KnowMySlots",
+    subtitle: "Interactive Casino & Slot Analytics",
+    problem: "Intricate dark-mode Figma mockups with detailed slot cards needed precise 1:1 responsive execution.",
+    solution: "Converted Figma views into clean React & Tailwind CSS components with instant search filters.",
+    result: "Achieved 100% design accuracy match with sub-second client-side navigation."
   }
 ];
 
@@ -73,7 +97,7 @@ export const CaseStudiesSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
-            Four projects broken down the way a client or reviewer would want to read them.
+            Featured real-world projects broken down the way a client or reviewer would want to read them.
           </motion.p>
           </div>
         </div>

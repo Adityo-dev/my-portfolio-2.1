@@ -139,6 +139,21 @@ export const ResumeDocument = () => {
                 title: "Dinisoft — Cloud Hosting & IT Infrastructure",
                 description: "A high-converting web hosting and IT infrastructure storefront featuring dynamic pricing matrixes, interactive mega-navigation, and domain lookup interfaces.",
                 tags: "React · Next.js 16 · TypeScript · Tailwind CSS · Lucide Icons · Mega Menu"
+              },
+              {
+                title: "Xtra-Vision — Enterprise Storefront & Custom CMS",
+                description: "A robust retail platform featuring a high-performance storefront and a bespoke admin dashboard allowing 80% of landing copy and banners to be modified dynamically.",
+                tags: "Next.js · React · TypeScript · Tailwind CSS · Axios · Zod · REST API"
+              },
+              {
+                title: "Transform To Liberation — Wellness Coaching & Event Hub",
+                description: "A transformative wellness platform featuring client onboarding, workshop event schedules, consultation booking, and a full-featured admin management panel.",
+                tags: "React · Next.js · TypeScript · Tailwind CSS · Framer Motion · JWT Auth"
+              },
+              {
+                title: "KnowMySlots — Interactive Casino & Slot Analytics",
+                description: "A pixel-perfect, highly responsive gaming and slot statistics web application converted from complex Figma designs into clean React and Tailwind CSS components.",
+                tags: "React.js · TypeScript · Tailwind CSS · Lucide React · Figma Conversion"
               }
             ].map((project, idx) => (
               <div key={idx} className="py-8 border-b border-white/5">
