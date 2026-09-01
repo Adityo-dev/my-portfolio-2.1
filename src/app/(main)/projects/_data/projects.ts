@@ -66,7 +66,7 @@ export const PROJECTS = [
   },
   {
     id: "solenne-luxury-membership",
-    featured: true,
+    featured: false,
     category: "Frontend",
     subcategory: "SaaS",
     year: "2026",
@@ -129,7 +129,7 @@ export const PROJECTS = [
   },
   {
     id: "xstore-modern-ecommerce",
-    featured: true,
+    featured: false,
     category: "Full Stack",
     subcategory: "Retail",
     year: "2026",
