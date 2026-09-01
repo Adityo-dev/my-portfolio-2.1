@@ -190,6 +190,66 @@ export const PROJECTS = [
     ]
   },
   {
+    id: "dinisoft-hosting-landing",
+    featured: false,
+    category: "Frontend",
+    subcategory: "Business",
+    year: "2025",
+    role: "Frontend Developer — Landing Page Architecture, Mega-Menu Navigation & UI Layouts",
+    title: "Dinisoft — Modern Cloud Hosting & Web Infrastructure Landing Experience",
+    description: "A high-converting, responsive web hosting and IT infrastructure storefront featuring dynamic pricing matrixes, interactive mega-navigation, domain lookup interfaces, and modern layout design.",
+    tags: ["React", "Next.js 16", "TypeScript", "Tailwind CSS", "Lucide Icons", "Mega Menu"],
+    links: { 
+      caseStudy: "/projects/dinisoft-hosting-landing", 
+      liveDemo: "https://dinisoftbd.com", 
+      github: "https://github.com/Adityo-dev/dinisoftbd" 
+    },
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1280&auto=format&fit=crop",
+    images: [
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1280&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1200",
+      "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=1200",
+      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200"
+    ],
+    overview: "Dinisoft is a major web hosting and cloud infrastructure provider in Bangladesh, offering BDIX & global shared hosting, managed VPS, dedicated enterprise servers, and IT solutions. Developed a high-converting, fully responsive landing interface featuring multi-tiered hosting plan comparisons, an interactive domain search hero, and a multi-level mega-menu navigation bar.",
+    problem: "Complex hosting platforms with broad service catalogs (Shared, VPS, Dedicated, BDIX, SMS, Business Email) often struggle with navigation clutter, slow mobile rendering, and overwhelming pricing tables that confuse potential customers.",
+    solution: "Redesigned and built a modern, responsive frontend architecture. Engineered an intuitive multi-column mega navbar with categorized service pathways, structured multi-tier hosting pricing grids with toggleable duration/locations, and a comprehensive footer hub for technical documentation, support, and SLA policies.",
+    keyFeatures: [
+      "Multi-Tier Mega Navbar: Responsive dropdown navigation categorizing dozens of server services (BDIX/USA/Singapore Shared Hosting, VPS, Dedicated Servers, Business Email, and SMS).",
+      "Hero Domain Search Bar: Clean and prominent domain registration / TLD search input interface designed for high-conversion onboarding.",
+      "Hosting Pricing & Spec Comparison Matrix: Clear pricing grids showcasing disk allocations (SSD NVMe), bandwidth, cPanel access, and 99.9% uptime badges.",
+      "Trust Badges & Feature Callouts: Visual highlight blocks emphasizing 24/7 technical support, 30-day money-back guarantee, and DDoS protection metrics.",
+      "Structured Multi-Column Footer: Modular footer architecture organizing legal agreements, terms of service, payment methods, and contact channels.",
+      "Mobile-First Responsive Layout: Smooth collapsible mobile drawer navigation ensuring effortless browsing across tablet and smartphone viewports."
+    ],
+    architecture: [
+      { id: "01", title: "React / Next.js 16 Landing Engine", desc: "Fast-loading static and dynamic page components for cloud services" },
+      { id: "02", title: "Mega-Menu Component", desc: "Categorized multi-column navigation menu with debounced hover handling" },
+      { id: "03", title: "Pricing Grid Engine", desc: "Interactive billing cycle toggles and server specification breakdown tables" },
+      { id: "04", title: "Responsive Layout Shell", desc: "Mobile drawer, accessible modals, and sticky header integration" }
+    ],
+    technologyMatrix: [
+      { category: "FRONTEND", items: ["React", "Next.js 16", "TypeScript", "Tailwind CSS", "Lucide Icons"] },
+      { category: "RESPONSIVE & UI", items: ["Mobile Hamburger Drawer", "Mega Menu Architecture", "Accessible Dialogs"] },
+      { category: "TOOLING & DEPLOYMENT", items: ["Git", "cPanel Deployment", "Cloud Hosting"] }
+    ],
+    challenges: [
+      {
+        challenge: "Organizing massive multi-level sub-navigation menus without causing layout overflow or hover flickering on various screen resolutions.",
+        solution: "Structured accessible, debounced hover/focus states with strict CSS z-index hierarchies and viewport boundary checks for submenus."
+      },
+      {
+        challenge: "Making dense technical hosting specs readable and engaging on small mobile screens.",
+        solution: "Designed collapsible accordions and swipeable pricing cards with clear visual hierarchy and high-contrast call-to-action buttons."
+      }
+    ],
+    results: [
+      "95+ Mobile Usability Score: Achieved fluid navigation and zero horizontal overflow across all major mobile browsers.",
+      "Enhanced User Journey: Reduced navigation clicks to primary hosting plans through structured mega-menu categorization.",
+      "Sub-second Landing Render: Lightweight, optimized assets and clean CSS structure for minimal initial bundle payload."
+    ]
+  },
+  {
     id: "nexus",
     featured: false,
     category: "Dashboard",
