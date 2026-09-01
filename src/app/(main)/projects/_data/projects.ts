@@ -79,14 +79,14 @@ export const PROJECTS = [
       liveDemo: "https://solenneuae.com", 
       github: "" 
     },
-    image: "/projects/solenne/solenne-hero-landing.png",
+    image: "/projects/solenne/solenne-hero-cover.png",
     images: [
-      "/projects/solenne/solenne-hero-landing.png",
+      "/projects/solenne/solenne-hero-cover.png",
       "/projects/solenne/solenne-partner-directory.png",
-      "/projects/solenne/solenne-membership-pass.png",
       "/projects/solenne/solenne-interactive-map.png",
+      "/projects/solenne/solenne-membership-pass.png",
       "/projects/solenne/solenne-subscription-flow.png",
-      "/projects/solenne/solenne-pillar-discovery.png"
+      "/projects/solenne/solenne-hero-landing.png"
     ],
     overview: "Solenne is an ultra-exclusive, invitation-only lifestyle membership platform built for discerning individuals seeking preferred rates and privileges across top-tier longevity clinics, high-performance movement studios, spa retreats, and fine dining destinations (including SIRO One Za'abeel, Guerlain Spa, and Dorchester Collection). The platform provides a secure digital membership card, interactive partner directory, and tiered privilege redemption.",
     problem: "High-end lifestyle concierge platforms often rely on fragmented physical cards or cluttered booking portals that detract from a luxury brand experience. The client needed a pixel-perfect, minimalist, and ultra-fast web application that provides frictionless digital membership management, interactive geolocation partner discovery, and secure annual subscription workflows.",
