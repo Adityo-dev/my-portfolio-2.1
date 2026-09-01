@@ -34,7 +34,7 @@ const CASE_STUDIES = [
 
 export const CaseStudiesSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0A0B0D] border-t border-white/[0.08] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -45,7 +45,7 @@ export const CaseStudiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
           >
             CASE STUDIES
           </motion.div>
@@ -54,7 +54,7 @@ export const CaseStudiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
           >
             Problem, solution, result
           </motion.h2>
@@ -63,7 +63,7 @@ export const CaseStudiesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
             Three projects broken down the way a client or reviewer would want to read them.
           </motion.p>
@@ -71,7 +71,7 @@ export const CaseStudiesSection = () => {
         </div>
 
         {/* Case Studies List */}
-        <div className="w-full flex flex-col border-t border-white/10">
+        <div className="w-full flex flex-col gap-12">
           {CASE_STUDIES.map((study, idx) => (
             <motion.div 
               key={idx}
@@ -79,20 +79,22 @@ export const CaseStudiesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.1 * idx }}
-              className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-md"
+              className="grid grid-cols-1 md:grid-cols-4 gap-6 pt-8 border-t border-white/[0.08]"
             >
               {/* Column 1: Project Info */}
-              <div className="md:col-span-1 flex flex-col">
-                <h3 className="text-xl font-semibold text-foreground tracking-tight mb-1">
-                  {study.title}
-                </h3>
-                <p className="text-[13px] text-muted-foreground mb-8">
-                  {study.subtitle}
-                </p>
+              <div className="md:col-span-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="text-xl font-semibold text-[#F7F7F5] tracking-tight mb-1">
+                    {study.title}
+                  </h3>
+                  <p className="text-[13px] text-[#9B9DA6] mb-6">
+                    {study.subtitle}
+                  </p>
+                </div>
                 
                 <Link 
                   href={`/projects/${study.id}`}
-                  className="group flex items-center gap-2 text-sm font-semibold text-foreground hover:text-[#FF5A36] transition-colors mt-auto"
+                  className="group flex items-center gap-2 text-sm font-semibold text-[#F7F7F5] hover:text-primary transition-colors mt-auto"
                 >
                   Read case study <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </Link>
@@ -100,30 +102,30 @@ export const CaseStudiesSection = () => {
 
               {/* Column 2: Problem */}
               <div className="md:col-span-1 flex flex-col gap-3">
-                <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold">
+                <div className="text-[10px] font-mono tracking-widest text-[#5C5F68] uppercase font-semibold">
                   PROBLEM
                 </div>
-                <p className="text-[14px] leading-relaxed text-muted-foreground/90">
+                <p className="text-[14px] leading-relaxed text-[#9B9DA6]">
                   {study.problem}
                 </p>
               </div>
 
               {/* Column 3: Solution */}
               <div className="md:col-span-1 flex flex-col gap-3">
-                <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold">
+                <div className="text-[10px] font-mono tracking-widest text-[#5C5F68] uppercase font-semibold">
                   SOLUTION
                 </div>
-                <p className="text-[14px] leading-relaxed text-muted-foreground/90">
+                <p className="text-[14px] leading-relaxed text-[#9B9DA6]">
                   {study.solution}
                 </p>
               </div>
 
               {/* Column 4: Result */}
               <div className="md:col-span-1 flex flex-col gap-3">
-                <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold">
+                <div className="text-[10px] font-mono tracking-widest text-[#5C5F68] uppercase font-semibold">
                   RESULT
                 </div>
-                <p className="text-[14px] leading-relaxed text-muted-foreground/90">
+                <p className="text-[14px] leading-relaxed text-[#9B9DA6]">
                   {study.result}
                 </p>
               </div>

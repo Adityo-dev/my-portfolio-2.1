@@ -34,7 +34,7 @@ const STACK = [
 
 export const TechStackSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -45,7 +45,7 @@ export const TechStackSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
           >
             TECH STACK
           </motion.div>
@@ -54,7 +54,7 @@ export const TechStackSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl  lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
           >
             What I build with
           </motion.h2>
@@ -63,7 +63,7 @@ export const TechStackSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
             Grouped by where it sits in the stack, and limited to what I have actually shipped with.
           </motion.p>
@@ -71,7 +71,7 @@ export const TechStackSection = () => {
         </div>
 
         {/* Stack List */}
-        <div className="w-full flex flex-col border-t border-white/10">
+        <div className="w-full flex flex-col border-t border-white/[0.08]">
           {STACK.map((group, idx) => (
             <motion.div 
               key={idx}
@@ -79,11 +79,11 @@ export const TechStackSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: 0.1 * idx }}
-              className="grid grid-cols-1 md:grid-cols-4 gap-4 py-8 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-md"
+              className="grid grid-cols-1 md:grid-cols-4 gap-4 py-8 border-b border-white/[0.08] hover:bg-[#1A1B21]/50 transition-colors duration-500 px-4 -mx-4 rounded-md"
             >
               <div className="md:col-span-1">
-                <h3 className="text-[15px] font-semibold text-foreground flex items-center gap-2.5">
-                  <group.icon className="w-4 h-4 text-[#FF5A36]" />
+                <h3 className="text-[15px] font-semibold text-[#F7F7F5] flex items-center gap-2.5">
+                  <group.icon className="w-4 h-4 text-primary" />
                   {group.category}
                 </h3>
               </div>
@@ -91,7 +91,7 @@ export const TechStackSection = () => {
                 {group.items.map((item, itemIdx) => (
                   <span 
                     key={itemIdx} 
-                    className="text-[15px] text-muted-foreground/80 hover:text-foreground transition-colors cursor-default"
+                    className="text-[15px] text-[#9B9DA6] hover:text-[#F7F7F5] transition-colors cursor-default"
                   >
                     {item}
                   </span>

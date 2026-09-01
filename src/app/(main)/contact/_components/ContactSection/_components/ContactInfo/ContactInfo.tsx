@@ -20,7 +20,7 @@ export const ContactInfo = () => {
           DIRECT CONTACT
         </h3>
         <div className="flex flex-col gap-4">
-          <Link href="mailto:hello@adittodev.com" className="flex items-center gap-3 text-base font-medium text-foreground hover:text-[#FF5A36] transition-colors w-fit">
+          <Link href="mailto:hello@adittodev.com" className="flex items-center gap-3 text-base font-medium text-foreground hover:text-primary transition-colors w-fit">
             <Mail className="w-5 h-5" /> hello@adittodev.com
           </Link>
           <p className="text-[15px] text-muted-foreground">

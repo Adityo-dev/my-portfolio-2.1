@@ -49,7 +49,7 @@ const JOURNEY_STEPS = [
 
 export const ProcessSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden font-sans">
+    <section className="relative w-full bg-[#0A0B0D] border-t border-white/[0.08] py-24 overflow-hidden font-sans">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Section Header */}
@@ -59,7 +59,7 @@ export const ProcessSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            className="text-xs font-mono tracking-widest text-primary uppercase font-semibold mb-4"
           >
             PROJECT PROCESS & JOURNEY
           </motion.div>
@@ -68,7 +68,7 @@ export const ProcessSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
           >
             How a project runs — step by step.
           </motion.h2>
@@ -77,7 +77,7 @@ export const ProcessSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
             From initial strategy call to final production deployment, here is how we bring your vision to life across 6 structured journey steps.
           </motion.p>
@@ -92,15 +92,15 @@ export const ProcessSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
-              className="group relative bg-white/[0.02] border border-white/10 hover:border-white/20 rounded-md p-5 flex flex-col justify-between transition-all duration-300 hover:bg-white/[0.04]"
+              className="group relative bg-[#1A1B21] border border-white/[0.08] hover:border-white/[0.18] rounded-md p-5 flex flex-col justify-between transition-all duration-300 hover:bg-[#22242C]"
             >
               <div>
                 {/* Step Header Badge */}
                 <div className="flex items-center justify-between mb-5 border-b border-white/10 pb-3">
-                  <span className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36]">
+                  <span className="text-xs font-mono font-semibold tracking-widest text-primary">
                     {step.phase}
                   </span>
-                  <span className="text-2xl font-mono font-bold text-white/20 group-hover:text-[#FF5A36]/60 transition-colors">
+                  <span className="text-2xl font-mono font-bold text-white/20 group-hover:text-primary/60 transition-colors">
                     {step.num}
                   </span>
                 </div>

@@ -44,7 +44,7 @@ const SERVICES = [
 
 export const ServicesSection = () => {
   return (
-    <section className="relative w-full bg-background py-24 overflow-hidden">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -55,7 +55,7 @@ export const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
           >
             SERVICES
           </motion.div>
@@ -64,7 +64,7 @@ export const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
           >
             How I can help
           </motion.h2>
@@ -73,7 +73,7 @@ export const ServicesSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
             Six kinds of work I take on — scoped, built and deployed end to end.
           </motion.p>
@@ -86,27 +86,27 @@ export const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="rounded-md border border-white/10 bg-white/10 overflow-hidden"
+          className="rounded-md border border-white/[0.08] bg-white/[0.08] overflow-hidden"
         >
           {/* Internal Grid with 1px gap for perfect borders */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px]">
             {SERVICES.map((service, idx) => (
               <div 
                 key={idx} 
-                className="bg-background hover:bg-white/[0.02] transition-colors duration-500 p-6 flex flex-col h-full"
+                className="bg-[#1A1B21] hover:bg-[#22242C] transition-colors duration-500 p-6 flex flex-col h-full"
               >
-                <div className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36] mb-5">
+                <div className="text-xs font-mono font-semibold tracking-widest text-primary mb-5">
                   {service.num}
                 </div>
-                <h3 className="text-lg md:text-xl font-semibold text-foreground mb-4">
+                <h3 className="text-lg md:text-xl font-semibold text-[#F7F7F5] mb-4">
                   {service.title}
                 </h3>
-                <p className="text-sm sm:text-[15px] leading-relaxed text-muted-foreground flex-1 mb-8">
+                <p className="text-sm sm:text-[15px] leading-relaxed text-[#9B9DA6] flex-1 mb-8">
                   {service.description}
                 </p>
-                <div className="flex flex-wrap gap-x-4 gap-y-2 text-[10px] font-mono text-muted-foreground/70 uppercase">
+                <div className="flex flex-wrap gap-2 text-[10px] font-mono text-[#9B9DA6] uppercase">
                   {service.tags.map((tag, tagIdx) => (
-                    <span key={tagIdx}>{tag}</span>
+                    <span key={tagIdx} className="px-2.5 py-1 rounded bg-primary/10 text-primary border border-primary/20">{tag}</span>
                   ))}
                 </div>
               </div>

@@ -43,7 +43,7 @@ const EXPERIENCES = [
 
 export const ExperienceSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -54,7 +54,7 @@ export const ExperienceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+            className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
           >
             EXPERIENCE
           </motion.div>
@@ -63,7 +63,7 @@ export const ExperienceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+            className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
           >
             Professional journey
           </motion.h2>
@@ -72,7 +72,7 @@ export const ExperienceSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+            className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
           >
             Freelance delivery and independent product builds — the work where I owned the decisions, not just the tickets.
           </motion.p>
@@ -80,7 +80,7 @@ export const ExperienceSection = () => {
         </div>
 
         {/* Experience List */}
-        <div className="w-full flex flex-col border-t border-white/10">
+        <div className="w-full flex flex-col border-t border-white/[0.08]">
           {EXPERIENCES.map((exp, idx) => (
             <motion.div 
               key={idx}
@@ -88,32 +88,32 @@ export const ExperienceSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: 0.1 * idx }}
-              className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 lg:py-16 border-b border-white/10 hover:bg-white/[0.02] transition-colors duration-500 px-4 -mx-4 rounded-md"
+              className="grid grid-cols-1 md:grid-cols-4 gap-8 py-12 lg:py-16 border-b border-white/[0.08] hover:bg-[#1A1B21]/50 transition-colors duration-500 px-4 -mx-4 rounded-md"
             >
               {/* Left Column: Dates & Company */}
               <div className="md:col-span-1 flex flex-col gap-1.5 mt-1">
-                <div className="text-[11px] font-mono font-semibold tracking-widest text-[#FF5A36] uppercase">
+                <div className="text-[11px] font-mono font-semibold tracking-widest text-primary uppercase">
                   {exp.period}
                 </div>
-                <div className="text-[13px] font-medium text-muted-foreground">
+                <div className="text-[13px] font-medium text-[#9B9DA6]">
                   {exp.company}
                 </div>
               </div>
 
               {/* Right Column: Role & Details */}
               <div className="md:col-span-3 flex flex-col gap-5 max-w-3xl">
-                <h3 className="text-xl sm:text-2xl font-semibold text-foreground tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#F7F7F5] tracking-tight">
                   {exp.role}
                 </h3>
                 
-                <p className="text-[15px] leading-relaxed text-muted-foreground/90">
+                <p className="text-[15px] leading-relaxed text-[#9B9DA6]">
                   {exp.description}
                 </p>
 
                 <ul className="flex flex-col gap-2.5 mt-2">
                   {exp.highlights.map((highlight, hIdx) => (
-                    <li key={hIdx} className="flex items-start gap-3 text-[14px] leading-relaxed text-muted-foreground/80">
-                      <span className="text-[#FF5A36] mt-[6px] text-[8px] opacity-80">●</span>
+                    <li key={hIdx} className="flex items-start gap-3 text-[14px] leading-relaxed text-[#9B9DA6]">
+                      <span className="text-primary mt-[6px] text-[8px]">●</span>
                       <span>{highlight}</span>
                     </li>
                   ))}
@@ -121,7 +121,7 @@ export const ExperienceSection = () => {
 
                 <div className="flex flex-wrap gap-2 mt-4">
                   {exp.tags.map(tag => (
-                    <span key={tag} className="px-3 py-1.5 rounded border border-white/10 bg-white/5 text-[10px] font-mono tracking-widest text-muted-foreground">
+                    <span key={tag} className="px-3 py-1.5 rounded border border-primary/20 bg-primary/10 text-[10px] font-mono tracking-widest text-primary">
                       {tag}
                     </span>
                   ))}

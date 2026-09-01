@@ -26,7 +26,7 @@ const FEATURES = [
 
 export const AboutSection = () => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0A0B0D] border-t border-white/[0.06] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -37,7 +37,7 @@ export const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+              className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
             >
               ABOUT
             </motion.div>
@@ -46,7 +46,7 @@ export const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
             >
               A developer who cares about both code and the product.
             </motion.h2>
@@ -55,7 +55,7 @@ export const AboutSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+              className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
             >
               I am a full stack developer working with React, Next.js, TypeScript, Node.js and SQL or NoSQL databases. I build complete applications — authentication, role-based access, dashboards, commerce flows and the APIs behind them — and I care most about the part after it works: whether it stays understandable and fast as it grows.
             </motion.p>
@@ -78,22 +78,22 @@ export const AboutSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-1 md:grid-cols-3 rounded-md border border-white/10 bg-white/[0.02] overflow-hidden"
+          className="grid grid-cols-1 md:grid-cols-3 rounded-md border border-white/[0.05] bg-[#16171C]/50 overflow-hidden"
         >
           {FEATURES.map((feature, idx) => (
             <div 
               key={idx} 
               className={`p-6 flex flex-col gap-5 ${
-                idx !== FEATURES.length - 1 ? "border-b md:border-b-0 md:border-r border-white/10" : ""
+                idx !== FEATURES.length - 1 ? "border-b md:border-b-0 md:border-r border-white/[0.05]" : ""
               }`}
             >
-              <div className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36]">
+              <div className="text-xs font-mono font-semibold tracking-widest text-primary">
                 {feature.num}
               </div>
-              <h3 className="text-xl font-semibold text-foreground">
+              <h3 className="text-xl font-semibold text-[#F7F7F5]">
                 {feature.title}
               </h3>
-              <p className="text-sm sm:text-[15px] leading-relaxed text-muted-foreground">
+              <p className="text-sm sm:text-[15px] leading-relaxed text-[#9B9DA6]">
                 {feature.description}
               </p>
             </div>

@@ -78,7 +78,7 @@ export const ProjectImage = ({ project }: { project: ProjectType }) => {
                       onClick={() => setSelectedIndex(idx)}
                       className={`relative shrink-0 w-20 sm:w-full aspect-[16/10] rounded-sm overflow-hidden border transition-all duration-200 cursor-pointer ${
                         isSelected 
-                          ? "border-[#FF5A36] bg-[#FF5A36]/10 opacity-100 ring-1 ring-[#FF5A36]/50" 
+                          ? "border-primary bg-primary/10 opacity-100 ring-1 ring-primary/50" 
                           : "border-white/10 opacity-60 hover:opacity-100 hover:border-white/30"
                       }`}
                     >
@@ -90,7 +90,7 @@ export const ProjectImage = ({ project }: { project: ProjectType }) => {
                         className="object-cover"
                       />
                       {isSelected && (
-                        <div className="absolute inset-0 border-2 border-[#FF5A36] rounded-sm pointer-events-none z-10" />
+                        <div className="absolute inset-0 border-2 border-primary rounded-sm pointer-events-none z-10" />
                       )}
                     </button>
                   );
@@ -127,14 +127,14 @@ export const ProjectImage = ({ project }: { project: ProjectType }) => {
 
               {/* Bottom Center Counter Badge */}
               <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-black/70 border border-white/15 text-[11px] font-mono text-white/90 backdrop-blur-md flex items-center gap-1.5 z-10 pointer-events-none shadow-lg">
-                <Layers className="w-3.5 h-3.5 text-[#FF5A36]" />
+                <Layers className="w-3.5 h-3.5 text-primary" />
                 <span>{selectedIndex + 1} / {galleryImages.length}</span>
               </div>
               
               {/* Zoom Hover Overlay */}
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-2 text-white font-mono text-xs font-semibold tracking-wider uppercase z-20">
                 <div className="px-4 py-2.5 bg-black/70 rounded-full border border-white/20 backdrop-blur-md flex items-center gap-2 shadow-xl">
-                  <Maximize2 className="w-4 h-4 text-[#FF5A36]" />
+                  <Maximize2 className="w-4 h-4 text-primary" />
                   <span>Click to enlarge</span>
                 </div>
               </div>

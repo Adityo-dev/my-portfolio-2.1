@@ -29,7 +29,7 @@ const AT_A_GLANCE = [
 
 export const AboutDetails = () => {
   return (
-    <section className="relative w-full bg-background py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0A0B0D] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
           
@@ -43,10 +43,10 @@ export const AboutDetails = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
               >
-                <h3 className="text-[17px] font-semibold text-foreground mb-3">
+                <h3 className="text-[17px] font-semibold text-[#F7F7F5] mb-3">
                   {item.title}
                 </h3>
-                <p className="text-[15px] leading-relaxed text-muted-foreground/80">
+                <p className="text-[15px] leading-relaxed text-[#9B9DA6]">
                   {item.description}
                 </p>
               </motion.div>
@@ -61,8 +61,8 @@ export const AboutDetails = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="lg:col-span-5"
           >
-            <div className="rounded-md border border-white/10 bg-white/[0.02] p-8 sm:p-10 h-fit">
-              <div className="text-[10px] font-mono tracking-widest text-muted-foreground uppercase font-semibold mb-8">
+            <div className="rounded-md border border-white/[0.08] bg-[#1A1B21] p-8 sm:p-10 h-fit">
+              <div className="text-[10px] font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-8">
                 AT A GLANCE
               </div>
               

@@ -15,7 +15,7 @@ export const ProjectsGallery = () => {
   );
 
   return (
-    <section className="relative w-full bg-background pb-24 pt-6">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] pb-24 pt-12">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Filters */}
@@ -26,8 +26,8 @@ export const ProjectsGallery = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-5 py-2 rounded-sm border text-[13px] font-medium cursor-pointer transition-all duration-300 ${
                 activeCategory === category 
-                  ? "bg-[#FF5A36] border-[#FF5A36] text-white" 
-                  : "border-white/10 bg-transparent text-muted-foreground hover:bg-white/5 hover:text-foreground"
+                  ? "bg-primary border-primary text-primary-foreground font-semibold" 
+                  : "border-white/10 bg-transparent text-[#9B9DA6] hover:bg-white/5 hover:text-[#F7F7F5]"
               }`}
             >
               {category}
@@ -54,7 +54,7 @@ export const ProjectsGallery = () => {
         </motion.div>
         
         {filteredProjects.length === 0 && (
-          <div className="text-center py-24 text-muted-foreground">
+          <div className="text-center py-24 text-[#9B9DA6]">
             No projects found in this category.
           </div>
         )}

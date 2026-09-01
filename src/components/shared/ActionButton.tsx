@@ -34,7 +34,7 @@ export const ActionButton = ({
       case 'outline':
         return "border border-white/20 bg-transparent text-foreground hover:bg-white/5";
       case 'primary':
-        return "border border-[#FF5A36] bg-[#FF5A36] text-white hover:bg-[#FF5A36]/90 hover:border-[#FF5A36]/90";
+        return "border border-primary bg-primary text-primary-foreground hover:opacity-90";
       case 'default':
       default:
         return "border border-foreground bg-foreground text-background hover:opacity-90";
@@ -46,7 +46,7 @@ export const ActionButton = ({
       case 'outline':
         return "border border-white/20 bg-transparent text-foreground hover:bg-white/5";
       case 'primary':
-        return "border border-[#FF5A36] bg-[#FF5A36] text-white hover:bg-[#FF5A36]/90 hover:border-[#FF5A36]/90";
+        return "border border-primary bg-primary text-primary-foreground hover:opacity-90";
       case 'default':
       default:
         return "border border-white/10 bg-white/[0.02] text-foreground hover:bg-white/10";

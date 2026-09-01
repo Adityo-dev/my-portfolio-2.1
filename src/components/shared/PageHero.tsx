@@ -28,7 +28,7 @@ export const PageHero = ({ badge, title, description, action }: PageHeroProps) =
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-5"
+              className="text-xs font-mono tracking-widest text-primary uppercase font-semibold mb-5"
             >
               {badge}
             </motion.div>

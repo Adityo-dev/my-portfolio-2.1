@@ -62,7 +62,7 @@ export const ContactForm = () => {
       transition={{ duration: 0.6 }}
       className="w-full lg:w-[60%] shrink-0"
     >
-      <div className="bg-[#111111] border border-white/5 rounded-md p-6  relative overflow-hidden">
+      <div className="bg-[#1A1B21] border border-white/[0.08] rounded-md p-6 relative overflow-hidden">
         
         <AnimatePresence>
           {isSuccess && (
@@ -70,18 +70,18 @@ export const ContactForm = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-[#111111] p-6 text-center"
+              className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-[#1A1B21] p-6 text-center"
             >
-              <div className="w-16 h-16 bg-[#FF5A36]/10 rounded-full flex items-center justify-center mb-6">
-                <CheckCircle2 className="w-8 h-8 text-[#FF5A36]" />
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                <CheckCircle2 className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-2xl font-semibold text-foreground mb-3">Message Sent!</h3>
-              <p className="text-muted-foreground text-[15px] max-w-sm">
+              <h3 className="text-2xl font-semibold text-[#F7F7F5] mb-3">Message Sent!</h3>
+              <p className="text-[#9B9DA6] text-[15px] max-w-sm">
                 Thanks for reaching out. I'll get back to you within one working day.
               </p>
               <button 
                 onClick={() => setIsSuccess(false)}
-                className="mt-8 px-6 py-2.5 rounded-full border border-white/10 text-sm font-medium hover:bg-white/5 transition-colors cursor-pointer"
+                className="mt-8 px-6 py-2.5 rounded-full border border-white/10 text-sm font-medium hover:bg-white/5 transition-colors cursor-pointer text-[#F7F7F5]"
               >
                 Send another message
               </button>
@@ -98,9 +98,9 @@ export const ContactForm = () => {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] font-medium text-foreground">Name</FormLabel>
+                    <FormLabel className="text-[13px] font-medium text-[#F7F7F5]">Name</FormLabel>
                     <FormControl>
-                      <Input placeholder="Your name" className="bg-transparent border-white/10 h-12 focus-visible:ring-[#FF5A36] focus-visible:ring-1" {...field} />
+                      <Input placeholder="Your name" className="bg-transparent border-white/10 h-12 focus-visible:ring-primary focus-visible:ring-1 text-[#F7F7F5]" {...field} />
                     </FormControl>
                     <FormMessage className="text-red-400 text-xs" />
                   </FormItem>
@@ -111,9 +111,9 @@ export const ContactForm = () => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel className="text-[13px] font-medium text-foreground">Email</FormLabel>
+                    <FormLabel className="text-[13px] font-medium text-[#F7F7F5]">Email</FormLabel>
                     <FormControl>
-                      <Input type="email" placeholder="you@company.com" className="bg-transparent border-white/10 h-12 focus-visible:ring-[#FF5A36] focus-visible:ring-1" {...field} />
+                      <Input type="email" placeholder="you@company.com" className="bg-transparent border-white/10 h-12 focus-visible:ring-primary focus-visible:ring-1 text-[#F7F7F5]" {...field} />
                     </FormControl>
                     <FormMessage className="text-red-400 text-xs" />
                   </FormItem>
@@ -126,10 +126,10 @@ export const ContactForm = () => {
               name="projectType"
               render={({ field }) => (
                 <FormItem className="w-full">
-                  <FormLabel className="text-[13px] font-medium text-foreground">Project type</FormLabel>
+                  <FormLabel className="text-[13px] font-medium text-[#F7F7F5]">Project type</FormLabel>
                   <Select onValueChange={field.onChange} defaultValue={field.value}>
                     <FormControl>
-                      <SelectTrigger className="w-full bg-transparent border-white/10 !h-12 focus:ring-[#FF5A36] focus:ring-1">
+                      <SelectTrigger className="w-full bg-transparent border-white/10 !h-12 focus:ring-primary focus:ring-1 text-[#F7F7F5]">
                         <SelectValue placeholder="Select type" />
                       </SelectTrigger>
                     </FormControl>
@@ -153,11 +153,11 @@ export const ContactForm = () => {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel className="text-[13px] font-medium text-foreground">Message</FormLabel>
+                  <FormLabel className="text-[13px] font-medium text-[#F7F7F5]">Message</FormLabel>
                   <FormControl>
                     <Textarea 
                       placeholder="What are you building, and what does success look like?" 
-                      className="bg-transparent border-white/10 min-h-[160px] resize-none focus-visible:ring-[#FF5A36] focus-visible:ring-1" 
+                      className="bg-transparent border-white/10 min-h-[160px] resize-none focus-visible:ring-primary focus-visible:ring-1 text-[#F7F7F5]" 
                       {...field}
                     />
                   </FormControl>

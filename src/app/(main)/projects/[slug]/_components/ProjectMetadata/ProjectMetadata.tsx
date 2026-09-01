@@ -6,11 +6,11 @@ type ProjectType = typeof PROJECTS[0];
 
 export const ProjectMetadata = ({ project }: { project: ProjectType }) => {
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-16 sm:py-20 overflow-hidden">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] py-16 sm:py-20 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36] uppercase mb-3">
+            <h3 className="text-xs font-mono font-semibold tracking-widest text-primary uppercase mb-3">
               ROLE
             </h3>
             <p className="text-base sm:text-lg font-semibold text-foreground">
@@ -19,7 +19,7 @@ export const ProjectMetadata = ({ project }: { project: ProjectType }) => {
           </div>
           
           <div>
-            <h3 className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36] uppercase mb-3">
+            <h3 className="text-xs font-mono font-semibold tracking-widest text-primary uppercase mb-3">
               YEAR
             </h3>
             <p className="text-base sm:text-lg font-semibold text-foreground">
@@ -28,7 +28,7 @@ export const ProjectMetadata = ({ project }: { project: ProjectType }) => {
           </div>
 
           <div>
-            <h3 className="text-xs font-mono font-semibold tracking-widest text-[#FF5A36] uppercase mb-3">
+            <h3 className="text-xs font-mono font-semibold tracking-widest text-primary uppercase mb-3">
               STACK
             </h3>
             <div className="flex flex-wrap gap-2">

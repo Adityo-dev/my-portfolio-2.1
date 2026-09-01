@@ -19,7 +19,7 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
         {/* Back Button */}
         <Link 
           href="/projects" 
-          className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase font-semibold text-muted-foreground hover:text-[#FF5A36] transition-colors mb-10"
+          className="inline-flex items-center gap-2 text-xs font-mono tracking-widest uppercase font-semibold text-muted-foreground hover:text-primary transition-colors mb-10"
         >
           <ArrowLeft className="w-4 h-4" /> All projects
         </Link>
@@ -27,8 +27,8 @@ export const ProjectHero = ({ project }: { project: ProjectType }) => {
         <div>
           {/* Category & Year Tag */}
           <div className="flex items-center gap-2 text-xs font-mono tracking-widest font-semibold uppercase mb-4">
-            <span className="text-[#FF5A36]">{project.category}</span>
-            <span className="text-[#FF5A36]">• {project.subcategory || "Details"}</span>
+            <span className="text-primary">{project.category}</span>
+            <span className="text-primary">• {project.subcategory || "Details"}</span>
             <span className="text-white/30">/</span>
             <span className="text-muted-foreground">{project.year}</span>
           </div>

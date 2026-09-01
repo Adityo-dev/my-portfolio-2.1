@@ -20,7 +20,7 @@ export const HeroSection = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+              className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
             >
               FULL STACK DEVELOPER
             </motion.div>
@@ -32,7 +32,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="text-[2.25rem] sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.08] mb-6"
             >
-              Building <span className="text-[#FF5A36]">Digital Experiences</span> That Scale.
+              Building <span className="text-primary">Digital Experiences</span> That Scale.
             </motion.h1>
 
             {/* Subtext */}
@@ -64,15 +64,15 @@ export const HeroSection = () => {
               className="flex flex-wrap items-center gap-x-6 gap-y-3 pt-6 border-t border-white/10 text-xs font-mono text-muted-foreground"
             >
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A36]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span>Production-Ready Code</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A36]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span>Scalable Architecture</span>
               </div>
               <div className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#FF5A36]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 <span>100% Code Handover</span>
               </div>
             </motion.div>
@@ -89,7 +89,7 @@ export const HeroSection = () => {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="relative w-full max-w-md aspect-[4/5] rounded-xl overflow-hidden border border-white/10 bg-white/[0.02] p-2 shadow-2xl group"
             >
-              <div className="relative w-full h-full rounded-lg overflow-hidden border border-white/10 bg-[#0A0A0A]">
+              <div className="relative w-full h-full rounded-md overflow-hidden border border-white/10 bg-[#0A0A0A]">
                 <Image 
                   src="/about.jpeg" 
                   alt="Koushik Barmon" 
@@ -102,14 +102,14 @@ export const HeroSection = () => {
                 {/* Floating Glassmorphism Badge */}
                 <div className="absolute bottom-5 left-5 right-5 p-4 rounded-md bg-black/80 border border-white/15 backdrop-blur-md flex items-center justify-between shadow-xl">
                   <div className="flex items-center gap-3">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#FF5A36] animate-pulse" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-primary animate-pulse" />
                     <div>
-                      <div className="text-[10px] font-mono tracking-widest text-[#FF5A36] uppercase font-semibold">STATUS</div>
+                      <div className="text-[10px] font-mono tracking-widest text-primary uppercase font-semibold">STATUS</div>
                       <div className="text-sm font-semibold text-white">Available for Contracts</div>
                     </div>
                   </div>
                   <div className="text-right">
-                    <div className="text-xl font-bold font-mono text-[#FF5A36]">03+</div>
+                    <div className="text-xl font-bold font-mono text-primary">03+</div>
                     <div className="text-[10px] font-mono text-muted-foreground uppercase">Yrs Exp</div>
                   </div>
                 </div>

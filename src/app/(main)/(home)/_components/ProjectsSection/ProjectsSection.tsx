@@ -10,7 +10,7 @@ export const ProjectsSection = () => {
   const regularProjects = PROJECTS.filter(p => !p.featured).slice(0, 3);
 
   return (
-    <section className="relative w-full bg-background border-t border-white/5 py-24 overflow-hidden">
+    <section className="relative w-full bg-[#0A0B0D] border-t border-white/[0.05] py-24 overflow-hidden">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         
         {/* Header Area */}
@@ -21,7 +21,7 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+              className="text-xs font-mono tracking-widest text-[#5C5F68] uppercase font-semibold mb-4"
             >
               SELECTED WORK
             </motion.div>
@@ -30,7 +30,7 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl  lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-5"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-5"
             >
               Here is what I have built.
             </motion.h2>
@@ -39,7 +39,7 @@ export const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-base sm:text-lg text-muted-foreground leading-relaxed"
+              className="text-base sm:text-lg text-[#9B9DA6] leading-relaxed"
             >
               Four projects, strongest first — each with the stack it actually runs on and a way to see it for yourself.
             </motion.p>

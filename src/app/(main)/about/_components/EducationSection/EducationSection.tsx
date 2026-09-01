@@ -31,7 +31,7 @@ const EXPLORING = [
 
 export const EducationSection = () => {
   return (
-    <section className="relative w-full bg-background py-24 overflow-hidden border-t border-white/5">
+    <section className="relative w-full bg-[#0A0B0D] py-24 overflow-hidden border-t border-white/[0.08]">
       <div className="mx-auto max-w-[1400px] px-4 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
           
@@ -42,7 +42,7 @@ export const EducationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+              className="text-xs font-mono tracking-widest text-primary uppercase font-semibold mb-4"
             >
               EDUCATION
             </motion.div>
@@ -51,12 +51,12 @@ export const EducationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-12"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-12"
             >
               Formal background
             </motion.h2>
 
-            <div className="flex flex-col border-t border-white/5">
+            <div className="flex flex-col border-t border-white/[0.08]">
               {EDUCATION.map((item, idx) => (
                 <motion.div 
                   key={idx}
@@ -64,26 +64,26 @@ export const EducationSection = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-100px" }}
                   transition={{ duration: 0.5, delay: 0.2 + idx * 0.1 }}
-                  className="py-6 sm:py-8 border-b border-white/5 flex flex-col gap-3"
+                  className="py-6 sm:py-8 border-b border-white/[0.08] flex flex-col gap-3"
                 >
                   <div className="flex flex-wrap items-center gap-3">
-                    <h3 className="text-[17px] font-semibold text-foreground">
+                    <h3 className="text-[17px] font-semibold text-[#F7F7F5]">
                       {item.degree}
                     </h3>
                     {item.badge && (
-                      <span className="px-2 py-1 rounded border border-[#FF5A36]/30 text-[#FF5A36] text-[10px] font-mono tracking-widest uppercase bg-[#FF5A36]/5">
+                      <span className="px-2 py-1 rounded border border-primary/30 text-primary text-[10px] font-mono tracking-widest uppercase bg-primary/5">
                         {item.badge}
                       </span>
                     )}
                   </div>
                   
-                  <div className="text-[15px] leading-relaxed text-muted-foreground/80">
+                  <div className="text-[15px] leading-relaxed text-[#9B9DA6]">
                     {item.institution} <span className="mx-2">·</span> {item.period}
                   </div>
                   
                   <div className="flex flex-wrap gap-4 sm:gap-6 mt-1">
                     {item.tags.map(tag => (
-                      <span key={tag} className="text-[11px] font-mono text-muted-foreground/80 tracking-wide">
+                      <span key={tag} className="text-[11px] font-mono text-[#9B9DA6] tracking-wide">
                         {tag}
                       </span>
                     ))}
@@ -100,7 +100,7 @@ export const EducationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5 }}
-              className="text-xs font-mono tracking-widest text-[#FF5A36] uppercase font-semibold mb-4"
+              className="text-xs font-mono tracking-widest text-primary uppercase font-semibold mb-4"
             >
               GROWTH
             </motion.div>
@@ -109,7 +109,7 @@ export const EducationSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-foreground leading-[1.1] mb-12"
+              className="text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-[-0.02em] text-[#F7F7F5] leading-[1.1] mb-12"
             >
               Currently exploring
             </motion.h2>
@@ -124,7 +124,7 @@ export const EducationSection = () => {
               {EXPLORING.map((topic, idx) => (
                 <div 
                   key={idx}
-                  className="rounded-md border border-white/10 bg-white/[0.02] p-5 text-[15px] font-medium text-foreground hover:bg-white/[0.04] transition-colors"
+                  className="rounded-md border border-white/[0.08] bg-[#1A1B21] p-5 text-[15px] font-medium text-[#F7F7F5] hover:bg-[#22242C] transition-colors"
                 >
                   {topic}
                 </div>

@@ -11,12 +11,12 @@ const SECTION_ANIMATION = {
 
 export const ResumeDocument = () => {
   return (
-    <section className="relative w-full bg-background pb-32 pt-12">
+    <section className="relative w-full bg-[#131419] border-t border-white/[0.08] pb-32 pt-12">
       <div className="mx-auto max-w-6xl px-4  relative z-10 font-sans">
         
         {/* 01 - SUMMARY */}
         <motion.div {...SECTION_ANIMATION} className="mb-12">
-          <h2 className="text-[11px] font-mono tracking-widest text-[#FF5A36] uppercase font-bold mb-6">
+          <h2 className="text-[11px] font-mono tracking-widest text-primary uppercase font-bold mb-6">
             01 — SUMMARY
           </h2>
           <p className="text-[16px] sm:text-[17px] leading-relaxed text-muted-foreground">
@@ -26,7 +26,7 @@ export const ResumeDocument = () => {
 
         {/* 02 - SKILLS */}
         <motion.div {...SECTION_ANIMATION} transition={{ duration: 0.6, delay: 0.1 }} className="mb-12">
-          <h2 className="text-[11px] font-mono tracking-widest text-[#FF5A36] uppercase font-bold mb-6">
+          <h2 className="text-[11px] font-mono tracking-widest text-primary uppercase font-bold mb-6">
             02 — SKILLS
           </h2>
           <div className="flex flex-col border-t border-white/5">
@@ -47,7 +47,7 @@ export const ResumeDocument = () => {
 
         {/* 03 - EXPERIENCE */}
         <motion.div {...SECTION_ANIMATION} transition={{ duration: 0.6, delay: 0.2 }} className="mb-12">
-          <h2 className="text-[11px] font-mono tracking-widest text-[#FF5A36] uppercase font-bold mb-6">
+          <h2 className="text-[11px] font-mono tracking-widest text-primary uppercase font-bold mb-6">
             03 — EXPERIENCE
           </h2>
           <div className="flex flex-col gap-12">
@@ -105,7 +105,7 @@ export const ResumeDocument = () => {
 
         {/* 04 - PROJECTS */}
         <motion.div {...SECTION_ANIMATION} transition={{ duration: 0.6, delay: 0.3 }} className="mb-12">
-          <h2 className="text-[11px] font-mono tracking-widest text-[#FF5A36] uppercase font-bold mb-6">
+          <h2 className="text-[11px] font-mono tracking-widest text-primary uppercase font-bold mb-6">
             04 — PROJECTS
           </h2>
           <div className="flex flex-col border-t border-white/5">
@@ -158,7 +158,7 @@ export const ResumeDocument = () => {
 
         {/* 05 - EDUCATION */}
         <motion.div {...SECTION_ANIMATION} transition={{ duration: 0.6, delay: 0.4 }}>
-          <h2 className="text-[11px] font-mono tracking-widest text-[#FF5A36] uppercase font-bold mb-6">
+          <h2 className="text-[11px] font-mono tracking-widest text-primary uppercase font-bold mb-6">
             05 — EDUCATION
           </h2>
           <div className="flex flex-col gap-6">
