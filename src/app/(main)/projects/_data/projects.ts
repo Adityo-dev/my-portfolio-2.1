@@ -14,8 +14,10 @@ export const PROJECTS = [
       liveDemo: "https://edunext-six.vercel.app", 
       github: "https://github.com/amrito/edunext-lms" 
     },
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1280&auto=format&fit=crop",
+    image: "/projects/edunext/hero.png",
     images: [
+      "/projects/edunext/full.png",
+      "/projects/edunext/hero.png",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784372699/edunext_images/dmy3zjvbiudost93jhg4.jpg",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784370491/edunext_images/drdka3llywsozsmmingd.jpg",
       "https://res.cloudinary.com/dut42zzkn/image/upload/v1784370996/edunext_images/eloreexpxglomuuhzaza.jpg"
